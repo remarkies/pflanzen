@@ -1,5 +1,5 @@
 <template>
-    <div>andre</div>
+    <div class="container">andre</div>
 </template>
 
 <script>
@@ -9,5 +9,9 @@
 </script>
 
 <style scoped>
+    @import "../styles/theme.scss";
 
+    .container {
+        background: yellow;
+    }
 </style>
