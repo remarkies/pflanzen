@@ -15,5 +15,4 @@
 
 <style scoped>
     @import "../styles/theme.scss";
-    @import "../styles/home.scss";
 </style>
