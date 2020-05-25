@@ -15,7 +15,6 @@
             article: {}
         },
         mounted: function() {
-            console.log('Articles found: ', this.article.sessions.length)
         }
     }
 </script>
