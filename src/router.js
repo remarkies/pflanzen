@@ -1,6 +1,5 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "@/views/Home";
 import Comparison from "@/views/Comparison";
 import Andre from "@/views/Andre";
 import Luka from "@/views/Luka";
@@ -14,11 +13,6 @@ export default new Router({
     routes: [
         {
             path: "/",
-            name: "home",
-            component: Home
-        },
-        {
-            path: "/comparison",
             name: "comparison",
             component: Comparison
         },

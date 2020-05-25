@@ -14,5 +14,4 @@
 </script>
 
 <style scoped>
-    @import "../styles/theme.scss";
 </style>
