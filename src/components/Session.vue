@@ -1,7 +1,7 @@
 <template>
     <div class="session">
-        <div class="picture" :key="image" v-for="image in images">
-            <img :src="image"/>
+        <div class="picture" :key="image" v-for="image in session.images">
+            <a v-bind:href="image"><img class="img" :src="image"/></a>
         </div>
     </div>
 </template>
@@ -14,22 +14,33 @@
         },
         data() {
             return {
-                images: [],
             };
         },
         methods: {
-            importAll(r) {
-                r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })));
-            },
+            showPicture: function(link) {
+                return link;
+            }
         },
         mounted: function() {
-            this.importAll(require.context(this.session.imgs, true, /\.jpg$/));
-            console.log(this.images);
+
 
         }
     }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+    .session {
+        margin: 20px 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .picture {
+            border-radius: 4px;
+            overflow: hidden;
+            background: gray;
+            margin: 4px;
+            img {
+                width: 100%;
+            }
+        }
+    }
 </style>
