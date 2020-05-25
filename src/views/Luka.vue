@@ -35,8 +35,6 @@
 </script>
 
 <style scoped>
-    @import "../styles/theme.scss";
-
     .container {
     }
 </style>

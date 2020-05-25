@@ -1,0 +1,12 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+:root{
+  --color-gray-darkest: #111;
+  --color-gray: #777;
+  --color-gray-light: #ddd;
+  --color-gray-lighter: #f4f4f4;
+
+  --color-text: var(--color-gray-darkest);
+  --color-text-light:  var(--color-gray);
+}
