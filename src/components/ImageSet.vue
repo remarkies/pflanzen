@@ -5,6 +5,11 @@
                 <a v-bind:href="image.path"><img class="img" :src="image.path"/></a>
             </div>
         </div>
+        <div v-if="imageSet.text.length > 0" class="space" :class="[imageSet.isConnector? 'connector' : 'text']">
+            <div v-if="imageSet.isConnector" class="vertical-line"></div>
+            <p >{{imageSet.text}}</p>
+            <div v-if="imageSet.isConnector" class="vertical-line"></div>
+        </div>
     </div>
 </template>
 
@@ -19,18 +24,33 @@
             };
         },
         methods: {
-            showPicture: function(link) {
-                return link;
-            }
         },
-        mounted: function() {
-
-
+        mounted() {
         }
     }
 </script>
 
 <style lang="scss" scoped>
+    .container {
+    }
+    .col-12 {
+        padding: 4px;
+    }
+    .col-11 {
+        padding: 4px;
+    }
+    .col-10 {
+        padding: 4px;
+    }
+    .col-9 {
+        padding: 4px;
+    }
+    .col-8 {
+        padding: 4px;
+    }
+    .col-7 {
+        padding: 4px;
+    }
     .col-6 {
         padding: 4px;
     }
@@ -62,5 +82,33 @@
         height: 100%;
         display: block;
         object-fit: cover;
+    }
+
+    .space {
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px 0px;
+        p {
+            margin: 16px 0px;
+        }
+        .vertical-line {
+            background: var(--color-gray-lighter);
+            height: 30px;
+            width: 4px;
+            border-radius: 4px;
+        }
+    }
+
+    .connector {
+        align-items: center;
+    }
+
+    .connector p {
+        font-weight: bold;
+    }
+
+    .text p {
+        text-align: left;
     }
 </style>

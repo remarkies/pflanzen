@@ -20,60 +20,113 @@
             }
         },
         methods: {
+            createImageDataSet: function(path, width) {
+                return { path: path, width: width}
+            },
+            createRowDataSet: function(images) {
+                let row = {
+                    images: []
+                };
+
+                for(let i = 0; i < images.length; i++) {
+                    row.images.push(images[i])
+                }
+                return row;
+            },
+            createImageSetDataSet: function(text, isConnector, rows) {
+                let imageSet = {
+                    text: text,
+                    isConnector: isConnector,
+                    rows: []
+                };
+
+                for(let i = 0; i < rows.length; i++) {
+                    imageSet.rows.push({
+                        id: i,
+                        images: rows[i].images
+                    });
+                }
+                return imageSet;
+            },
+            createArticleDataSet: function(title, description, imageSets) {
+                let article = {
+                    title: title,
+                    description: description,
+                    imageSets : []
+                };
+
+                for(let i = 0; i < imageSets.length; i++) {
+                    article.imageSets.push({
+                        id: i,
+                        text: imageSets[i].text,
+                        isConnector: imageSets[i].isConnector,
+                        rows: imageSets[i].rows
+                    });
+                }
+                return article;
+            },
+
             init: function() {
-                this.articles.push({
-                    title: "Gemüsetopf",
-                    description: "Die Bepflanzung eines Gemüsetopfes war der Versuch den daraus folgenden Wachstum fotografisch festzuhalten. Es wurden Kopfsalat- und Schnittsalatsetzlinge gepflanzt, dazu vorgekeimte Petersilie und Radieschensamen verteilt.",
-                    imageSets: [
-                        {
-                            title: "Session 01", text: "Topf bepflanzen",
-                            rows: [
-                                {
-                                    id: 1,
-                                    images: [
-                                        { path: "/luka/topf/session01/Topf-Session1-1.jpg", width: 6},
-                                        { path: "/luka/topf/session01/Topf-Session1-2.jpg", width: 6}
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            title: "Session 02", text: "Topf bepflanzen",
-                            rows: [
-                                {
-                                    id: 2,
-                                    images: [
-                                        { path: "/luka/topf/session02/Topf-Session2-1.jpg", width: 2},
-                                        { path: "/luka/topf/session02/Topf-Session2-2.jpg", width: 6},
-                                        { path: "/luka/topf/session02/Topf-Session2-4.jpg", width: 4}
-                                    ]
-                                }
-                            ]
-                        },
-                        { title: "Session 03", text: "Einige Tage nach bepflanzung", images: [
-                                "/luka/topf/session03/Topf-Session3-1.jpg",
-                                "/luka/topf/session03/Topf-Session3-2.jpg",
-                                "/luka/topf/session03/Topf-Session3-3.jpg",
-                                "/luka/topf/session03/Topf-Session3-4.jpg",
-                                "/luka/topf/session03/Topf-Session3-5.jpg",
-                                "/luka/topf/session03/Topf-Session3-6.jpg",
-                                "/luka/topf/session03/Topf-Session3-7.jpg",
-                                "/luka/topf/session03/Topf-Session3-8.jpg"]},
-                        { title: "Session 05", text: "Einige Tage nach bepflanzung", images: [
-                                "/luka/topf/session05/Topf-Session5-1.jpg",
-                                "/luka/topf/session05/Topf-Session5-2.jpg",
-                                "/luka/topf/session05/Topf-Session5-5.jpg",
-                                "/luka/topf/session05/Topf-Session5-7.jpg",
-                                "/luka/topf/session05/Topf-Session5-8.jpg",
-                                "/luka/topf/session05/Topf-Session5-10.jpg"]},
-                        { title: "Session 06", text: "Einige Tage nach bepflanzung", images: [
-                                "/luka/topf/session06/Topf-Session6-1.jpg",
-                                "/luka/topf/session06/Topf-Session6-2.jpg",
-                                "/luka/topf/session06/Topf-Session6-3.jpg",
-                                "/luka/topf/session06/Topf-Session6-5.jpg",
-                                "/luka/topf/session06/Topf-Session6-6.jpg"]},
-                    ]
-                });
+                let article = this.createArticleDataSet("Gemüsetopf","Die Bepflanzung eines Gemüsetopfes war der Versuch den daraus folgenden Wachstum fotografisch festzuhalten. Es wurden Kopfsalat- und Schnittsalatsetzlinge gepflanzt, dazu vorgekeimte Petersilie und Radieschensamen verteilt.",
+                    [
+                        this.createImageSetDataSet("Session 01", true, [
+                            this.createRowDataSet([
+                                this.createImageDataSet("/luka/topf/session01/Topf-Session1-1.jpg", 6),
+                                this.createImageDataSet("/luka/topf/session01/Topf-Session1-2.jpg", 6)
+                            ])
+                        ]),
+                        this.createImageSetDataSet("Session 02", true, [
+                            this.createRowDataSet([
+                                this.createImageDataSet("/luka/topf/session02/Topf-Session2-1.jpg", 4),
+                                this.createImageDataSet("/luka/topf/session02/Topf-Session2-2.jpg", 4),
+                                this.createImageDataSet("/luka/topf/session02/Topf-Session2-4.jpg", 4)
+                            ])
+                        ]),
+                        this.createImageSetDataSet("Session 03", true, [
+                            this.createRowDataSet([
+                                this.createImageDataSet("/luka/topf/session03/Topf-Session3-1.jpg", 4),
+                                this.createImageDataSet("/luka/topf/session03/Topf-Session3-2.jpg", 4),
+                                this.createImageDataSet("/luka/topf/session03/Topf-Session3-3.jpg", 4)
+                            ]),
+                            this.createRowDataSet([
+                                this.createImageDataSet("/luka/topf/session03/Topf-Session3-4.jpg", 6),
+                                this.createImageDataSet("/luka/topf/session03/Topf-Session3-5.jpg", 6)
+                            ]),
+                            this.createRowDataSet([
+                                this.createImageDataSet("/luka/topf/session03/Topf-Session3-6.jpg", 4),
+                                this.createImageDataSet("/luka/topf/session03/Topf-Session3-7.jpg", 4),
+                                this.createImageDataSet("/luka/topf/session03/Topf-Session3-8.jpg", 4)
+                            ])
+                        ]),
+                        this.createImageSetDataSet("Lorem ipsum dolor sit amet,...", false, [
+                            this.createRowDataSet([
+                                this.createImageDataSet("/luka/topf/session05/Topf-Session5-1.jpg", 8),
+                                this.createImageDataSet("/luka/topf/session05/Topf-Session5-2.jpg", 4),
+                            ]),
+                            this.createRowDataSet([
+                                this.createImageDataSet("/luka/topf/session05/Topf-Session5-4.jpg", 4),
+                                this.createImageDataSet("/luka/topf/session05/Topf-Session5-5.jpg", 4),
+                                this.createImageDataSet("/luka/topf/session05/Topf-Session5-6.jpg", 4)
+                            ]),
+                            this.createRowDataSet([
+                                this.createImageDataSet("/luka/topf/session05/Topf-Session5-9.jpg", 6),
+                                this.createImageDataSet("/luka/topf/session05/Topf-Session5-10.jpg", 6)
+                            ])
+                        ]),
+                        this.createImageSetDataSet("", false, [
+                            this.createRowDataSet([
+                                this.createImageDataSet("/luka/topf/session06/Topf-Session6-1.jpg", 5),
+                                this.createImageDataSet("/luka/topf/session06/Topf-Session6-2.jpg", 4),
+                                this.createImageDataSet("/luka/topf/session06/Topf-Session6-7.jpg", 3)
+                            ]),
+                            this.createRowDataSet([
+                                this.createImageDataSet("/luka/topf/session06/Topf-Session6-5.jpg", 6),
+                                this.createImageDataSet("/luka/topf/session06/Topf-Session6-6.jpg", 6)
+                            ])
+                        ])
+                    ]);
+
+                this.articles.push(article);
             }
         },
         mounted: function() {
@@ -83,7 +136,4 @@
 </script>
 
 <style scoped>
-    .container {
-        padding-top: 70px;
-    }
 </style>
