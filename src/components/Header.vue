@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container-lg">
-      <h1>Projekte von <span class="color-primary">{{ name }}</span></h1>
+      <h1><slot>Projekte von <span class="color-primary">{{ name }}</span></slot></h1>
       <p class="description">{{ description }}</p>
     </div>
   </header>
@@ -12,7 +12,8 @@ export default {
   props: {
     name: {
       type: String,
-      required: true
+      required: false,
+      default: '',
     },
     description: {
       type: String,
