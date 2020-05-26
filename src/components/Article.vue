@@ -1,7 +1,7 @@
 <template>
     <div class="article">
-        <div class="title">{{article.title}}</div>
-        <div class="subtitle">{{article.description}}</div>
+        <h2>{{article.title}}</h2>
+        <p class="subtitle">{{article.description}}</p>
         <ImageSet :image-set="imageSet" :key="imageSet.title" v-for="imageSet in article.imageSets"/>
     </div>
 </template>
@@ -23,6 +23,8 @@
     }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+    .article {
+        padding: 90px 0px;
+    }
 </style>
