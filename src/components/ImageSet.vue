@@ -1,7 +1,9 @@
 <template>
-    <div class="imageSet">
-        <div class="picture" :key="image" v-for="image in imageSet.images">
-            <a v-bind:href="image"><img class="img" :src="image"/></a>
+    <div class="container">
+        <div class="row" :key="row.id" v-for="row in imageSet.rows">
+            <div :class="'col-'+image.width" :key="image.path" v-for="image in row.images">
+                <a v-bind:href="image.path"><img class="img" :src="image.path"/></a>
+            </div>
         </div>
     </div>
 </template>
@@ -29,19 +31,25 @@
 </script>
 
 <style lang="scss" scoped>
-    .imageSet {
-        margin: 20px 0px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        .picture {
-            overflow: hidden;
-            background: gray;
-            margin: 4px;
-            img {
-                display:block;
-                object-fit: cover;
-                width: 100%;
-            }
-        }
+    .col-6 {
+        padding: 4px;
+    }
+    .col-5 {
+        padding: 4px;
+    }
+    .col-4 {
+        padding: 4px;
+    }
+    .col-3 {
+        padding: 4px;
+    }
+    .col-2 {
+        padding: 4px;
+    }
+    .col-1 {
+        padding: 4px;
+    }
+    img {
+        width: 100%;
     }
 </style>
