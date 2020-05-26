@@ -43,17 +43,13 @@
                                 {
                                     id: 2,
                                     images: [
-                                        { path: "/luka/topf/session02/Topf-Session2-1.jpg", width: 4},
-                                        { path: "/luka/topf/session02/Topf-Session2-2.jpg", width: 4},
+                                        { path: "/luka/topf/session02/Topf-Session2-1.jpg", width: 2},
+                                        { path: "/luka/topf/session02/Topf-Session2-2.jpg", width: 6},
                                         { path: "/luka/topf/session02/Topf-Session2-4.jpg", width: 4}
                                     ]
                                 }
                             ]
                         },
-                        { title: "Session 02", text: "Einige Tage nach bepflanzung", images: [
-                                "/luka/topf/session02/Topf-Session2-1.jpg",
-                                "/luka/topf/session02/Topf-Session2-2.jpg",
-                                "/luka/topf/session02/Topf-Session2-4.jpg"]},
                         { title: "Session 03", text: "Einige Tage nach bepflanzung", images: [
                                 "/luka/topf/session03/Topf-Session3-1.jpg",
                                 "/luka/topf/session03/Topf-Session3-2.jpg",

@@ -49,7 +49,17 @@
     .col-1 {
         padding: 4px;
     }
+
+    .row {
+        align-items: stretch
+    }
+    a {
+        display: block;
+        height: 100%;
+    }
     img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 </style>
