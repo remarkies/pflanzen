@@ -103,6 +103,10 @@
         align-items: center;
     }
 
+    .connector p {
+        font-weight: bold;
+    }
+
     .text p {
         text-align: left;
     }
