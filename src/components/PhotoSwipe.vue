@@ -65,27 +65,12 @@ import PhotoSwipeUI_Default from "photoswipe/dist/photoswipe-ui-default";
 export default {
   name: "PhotoSwipe",
   methods: {
-    init: function(selectedImage) {
-      const imagesSrc = this.$parent.imageSet.rows
-        .map(({ images }) => {
-          return images.map(({ path }) => {
-            return path;
-          });
-        })
-        .flat();
+    init: function(items, index) {
 
       const pswpElement = this.$refs.pswpElement;
 
-      let items = [];
-      let dimensions = this.$parent.$refs.photoSwipeImages.map(image => {
-        return { w: image.naturalWidth, h: image.naturalHeight };
-      });
-      imagesSrc.forEach((src, index) => {
-        items.push({ src, ...dimensions[index] });
-      });
-
       const options = {
-        index: imagesSrc.indexOf(selectedImage)
+        index: index
       };
 
       const gallery = new PhotoSwipe(
@@ -99,3 +84,7 @@ export default {
   }
 };
 </script>
+
+
+<style src='photoswipe/dist/photoswipe.css'></style>
+<style src='photoswipe/dist/default-skin/default-skin.css'></style>

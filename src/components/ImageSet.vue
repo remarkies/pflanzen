@@ -31,8 +31,26 @@ export default {
   },
   methods: {
     initPhotoSwipe: function(imageSrc) {
+      const imagesSrc = this.imageSet.rows
+        .map(({ images }) => {
+          return images.map(({ path }) => {
+            return path;
+          });
+        })
+        .flat();
+
+      let items = [];
+      let dimensions = this.$refs.photoSwipeImages.map(image => {
+        return { w: image.naturalWidth, h: image.naturalHeight };
+      });
+      imagesSrc.forEach((src, index) => {
+        items.push({ src, ...dimensions[index] });
+      });
+
+      const index = imagesSrc.indexOf(imageSrc);
+
       const photoSwipe = this.$refs.photoSwipe;
-      photoSwipe.init(imageSrc, this.imageSet);
+      photoSwipe.init(items, index);
     }
   }
 };
