@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row" :key="row.id" v-for="row in imageSet.rows">
             <div :class="'col-'+image.width" :key="image.path" v-for="image in row.images">
-                <a v-bind:href="image.path"><img class="img" :src="image.path"/></a>
+                <a @click="$emit('open-photoSwipe', image.path)"><img class="img" :src="image.path"/></a>
             </div>
         </div>
     </div>
@@ -17,11 +17,6 @@
         data() {
             return {
             };
-        },
-        methods: {
-            showPicture: function(link) {
-                return link;
-            }
         },
         mounted: function() {
 
