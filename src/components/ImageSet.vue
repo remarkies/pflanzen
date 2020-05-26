@@ -1,6 +1,6 @@
 <template>
-    <div class="session">
-        <div class="picture" :key="image" v-for="image in session.images">
+    <div class="imageSet">
+        <div class="picture" :key="image" v-for="image in imageSet.images">
             <a v-bind:href="image"><img class="img" :src="image"/></a>
         </div>
     </div>
@@ -8,9 +8,9 @@
 
 <script>
     export default {
-        name: "Session",
+        name: "imageSet",
         props: {
-            session: {}
+            imageSet: {}
         },
         data() {
             return {
@@ -29,12 +29,11 @@
 </script>
 
 <style lang="scss" scoped>
-    .session {
+    .imageSet {
         margin: 20px 0px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         .picture {
-            border-radius: 4px;
             overflow: hidden;
             background: gray;
             margin: 4px;

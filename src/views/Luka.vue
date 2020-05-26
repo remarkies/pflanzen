@@ -22,7 +22,7 @@
                 this.articles.push({
                     title: "Gemüsetopf",
                     description: "Die Bepflanzung eines Gemüsetopfes war der Versuch den daraus folgenden Wachstum fotografisch festzuhalten. Es wurden Kopfsalat- und Schnittsalatsetzlinge gepflanzt, dazu vorgekeimte Petersilie und Radieschensamen verteilt.",
-                    sessions: [
+                    imageSets: [
                         { title: "Session 01", text: "Topf bepflanzen", images: [
                                 "/luka/topf/session01/Topf-Session1-1.jpg",
                                 "/luka/topf/session01/Topf-Session1-2.jpg"]},

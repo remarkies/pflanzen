@@ -2,16 +2,16 @@
     <div class="article">
         <div class="title">{{article.title}}</div>
         <div class="subtitle">{{article.description}}</div>
-        <Session :session="session" :key="session.title" v-for="session in article.sessions"/>
+        <ImageSet :image-set="imageSet" :key="imageSet.title" v-for="imageSet in article.imageSets"/>
     </div>
 </template>
 
 <script>
-    import Session from "@/components/Session";
+    import ImageSet from "@/components/ImageSet";
 
     export default {
         name: "Article",
-        components: {Session},
+        components: {ImageSet},
         props: {
             article: {
                 type: Object,
