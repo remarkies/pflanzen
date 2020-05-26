@@ -29,6 +29,7 @@ nav{
   width:100%;
   background:white;
   border-bottom: 2px solid var(--color-gray-light);
+  z-index: 1;
 
   .navigation--content{
     display:flex;

@@ -1,6 +1,6 @@
 <template>
   <!-- Root element of PhotoSwipe. Must have class pswp. -->
-  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" ref="pswpElement">
     <!-- Background of PhotoSwipe. 
     It's a separate element as animating opacity is faster than rgba().-->
     <div class="pswp__bg"></div>
@@ -57,3 +57,45 @@
     </div>
   </div>
 </template>
+
+<script>
+import PhotoSwipe from "photoswipe";
+import PhotoSwipeUI_Default from "photoswipe/dist/photoswipe-ui-default";
+
+export default {
+  name: "PhotoSwipe",
+  methods: {
+    init: function(selectedImage) {
+      const imagesSrc = this.$parent.imageSet.rows
+        .map(({ images }) => {
+          return images.map(({ path }) => {
+            return path;
+          });
+        })
+        .flat();
+
+      const pswpElement = this.$refs.pswpElement;
+
+      let items = [];
+      let dimensions = this.$parent.$refs.photoSwipeImages.map(image => {
+        return { w: image.naturalWidth, h: image.naturalHeight };
+      });
+      imagesSrc.forEach((src, index) => {
+        items.push({ src, ...dimensions[index] });
+      });
+
+      const options = {
+        index: imagesSrc.indexOf(selectedImage)
+      };
+
+      const gallery = new PhotoSwipe(
+        pswpElement,
+        PhotoSwipeUI_Default,
+        items,
+        options
+      );
+      gallery.init();
+    }
+  }
+};
+</script>
