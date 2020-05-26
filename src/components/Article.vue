@@ -8,11 +8,15 @@
 
 <script>
     import Session from "@/components/Session";
+
     export default {
         name: "Article",
         components: {Session},
         props: {
-            article: {}
+            article: {
+                type: Object,
+                required: true
+            }
         },
         mounted: function() {
         }

@@ -39,6 +39,8 @@
             background: gray;
             margin: 4px;
             img {
+                display:block;
+                object-fit: cover;
                 width: 100%;
             }
         }

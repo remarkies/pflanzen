@@ -1,15 +1,39 @@
 <template>
-    <div class="container">andre</div>
+  <div>
+    <Header name="André" :description="description" />
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "Andre"
+import Header from "@/components/Header";
+
+export default {
+  name: 'André',
+  components: {
+    Header
+  },
+  data () {
+    return {
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      projects: [
+        {
+          title: 'Schwalbenschwanz Schmetterlinge',
+          subtitle: '',
+        },
+        {
+          title: 'Gartenbeet Bau',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu leo, tristique elementum consectetur faucibus vel, fringilla. Sed amet duis etiam condimentum aliquet at sit. Blandit pellentesque tempor facilisis augue pulvinar convallis odio. Tellus blandit tempus cursus tellus porttitor placerat.'
+        },
+        {
+          title: 'Blumen sähen',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu leo, tristique elementum consectetur faucibus vel, fringilla. Sed amet duis etiam condimentum aliquet at sit. Blandit pellentesque tempor facilisis augue pulvinar convallis odio. Tellus blandit tempus cursus tellus porttitor placerat.'
+        }
+      ]
     }
+  }
+}
 </script>
 
-<style scoped>
-    .container {
-        background: yellow;
-    }
+<style lang='scss' scoped>
+
 </style>

@@ -7,6 +7,17 @@
   --color-gray-light: #ddd;
   --color-gray-lighter: #f4f4f4;
 
+  --color-primary: #448130;
+
   --color-text: var(--color-gray-darkest);
   --color-text-light:  var(--color-gray);
+}
+
+.color-primary{
+  color: var(--color-primary);
+}
+
+h1{
+  font-size:2.6rem;
+  font-weight:600;
 }

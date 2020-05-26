@@ -1,11 +1,23 @@
 <template>
-    <div class="container">fabien</div>
+  <div>
+    <Header name="Fabien" :description="description" />
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "Fabien"
+import Header from "@/components/Header";
+
+export default {
+  name: 'Fabien',
+  data () {
+    return {
+      description: ''
     }
+  },
+  components: {
+    Header
+  }
+}
 </script>
 
 <style scoped>

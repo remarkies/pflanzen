@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container-lg">
         <div class="title">
             <p class="title-name">Luka</p>
         </div>
