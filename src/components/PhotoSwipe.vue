@@ -61,12 +61,15 @@
 <script>
 import PhotoSwipe from "photoswipe";
 import PhotoSwipeUI_Default from "photoswipe/dist/photoswipe-ui-default";
+import "photoswipe/dist/photoswipe.css";
+import "photoswipe/dist/default-skin/default-skin.css";
+
+import EventBus from "./EventBus";
 
 export default {
   name: "PhotoSwipe",
   methods: {
     init: function(items, index) {
-
       const pswpElement = this.$refs.pswpElement;
 
       const options = {
@@ -81,10 +84,11 @@ export default {
       );
       gallery.init();
     }
+  },
+  mounted() {
+    EventBus.$on("init-PhotoSwipe", (items, index) => {
+      this.init(items, index);
+    });
   }
 };
 </script>
-
-
-<style src='photoswipe/dist/photoswipe.css'></style>
-<style src='photoswipe/dist/default-skin/default-skin.css'></style>

@@ -16,16 +16,14 @@
       <p>{{imageSet.text}}</p>
       <div v-if="imageSet.isConnector" class="vertical-line"></div>
     </div>
-    <PhotoSwipe ref="photoSwipe" />
   </div>
 </template>
 
 <script>
-import PhotoSwipe from "@/components/PhotoSwipe";
+import EventBus from './EventBus';
 
 export default {
   name: "imageSet",
-  components: { PhotoSwipe },
   props: {
     imageSet: Object
   },
@@ -49,8 +47,7 @@ export default {
 
       const index = imagesSrc.indexOf(imageSrc);
 
-      const photoSwipe = this.$refs.photoSwipe;
-      photoSwipe.init(items, index);
+      EventBus.$emit('init-PhotoSwipe', items, index);
     }
   }
 };

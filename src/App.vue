@@ -4,17 +4,21 @@
     <main id="content">
       <router-view />
     </main>
+    <PhotoSwipe/>
   </div>
 </template>
 
 <script>
-import Navigation from './components/Navigation'
+import Navigation from './components/Navigation';
+import PhotoSwipe from "@/components/PhotoSwipe";
+
 
 export default {
   name: 'App',
   components: {
-    Navigation
-  }
+    Navigation,
+    PhotoSwipe
+  },
 }
 </script>
 
