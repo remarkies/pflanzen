@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import EventBus from './EventBus';
+import EventBus from '../modules/EventBus';
 
 export default {
   name: "imageSet",

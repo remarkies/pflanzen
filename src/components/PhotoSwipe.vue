@@ -64,7 +64,7 @@ import PhotoSwipeUI_Default from "photoswipe/dist/photoswipe-ui-default";
 import "photoswipe/dist/photoswipe.css";
 import "photoswipe/dist/default-skin/default-skin.css";
 
-import EventBus from "./EventBus";
+import EventBus from '../modules/EventBus';
 
 export default {
   name: "PhotoSwipe",
