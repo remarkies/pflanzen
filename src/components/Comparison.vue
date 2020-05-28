@@ -73,7 +73,7 @@ export default {
 
 <style lang="scss" scoped>
 .comparison{
-  margin-top:70px;
+  margin-top:35px;
 
   &.second-dimension{
     margin-top: 10px;
