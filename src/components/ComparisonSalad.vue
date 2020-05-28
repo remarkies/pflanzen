@@ -1,6 +1,6 @@
 <template>
   <div class="container-lg">
-    <Comparison :comparison-data="comparison" :imagePath="imagePath"/>
+    <Comparison :comparison-data="comparison" :imagePath="imagePath" video />
   </div>
 </template>
 
