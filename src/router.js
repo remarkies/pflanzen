@@ -31,5 +31,9 @@ export default new Router({
             name: "fabien",
             component: Fabien
         },
+        {
+            path: "*",
+            redirect: "/"
+        },
     ]
 });
