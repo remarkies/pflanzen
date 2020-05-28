@@ -3,13 +3,22 @@
     <b-tabs content-class="mt-3">
       <b-tab v-for="(item, index) in comparisonData" :key="index" :title="item.title">
         <div class="row align-items-strech">
-          <figure v-for="(imageItem, imageIndex) in item.items" :key="imageIndex" :class="`col-${12 / item.items.length}`">
-            <img :src="`/img/comparison/${imagePath}/${imageItem.image}`" class="img-fluid" :alt="`Bild von ${imageItem.person} in ${imageItem.place}`">
-            <figcaption>
+          <div v-for="(imageItem, imageIndex) in item.items" :key="imageIndex" :class="`col-${12 / item.items.length}`">
+            <template v-if="!video">
+              <figure>
+                <img :src="`/img/comparison/${imagePath}/${imageItem.image}`" class="img-fluid" :alt="`Bild von ${imageItem.person} in ${imageItem.place}`">
+              </figure>
+            </template>
+            <template v-else>
+              <div class="embed-responsive embed-responsive-9by16">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ks80rsSehpU" allowfullscreen></iframe>
+              </div>
+            </template>
+            <section class="description">
               <h5>{{ imageItem.place }}</h5>
               <p>{{ imageItem.person }}</p>
-            </figcaption>
-          </figure>
+            </section>
+          </div>
         </div>
       </b-tab>
     </b-tabs>
@@ -32,7 +41,13 @@ export default {
     },
     imagePath: {
       type: String,
-      required: true
+      required: false,
+      default: ''
+    },
+    video: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   },
   data () {
@@ -46,25 +61,36 @@ export default {
   margin-top:50px;
 
   figure{
-    figcaption{
-      margin-top: 15px;
-      
-      h5{
-        margin:0;
-        font-size:1.1rem;
-        font-weight:600;
-      }
+    img{
+      display:block;
+      width:100%;
+    }
+  }
 
-      p{
-        color: var(--color-gray);
-        font-size:.95rem;
-      }
+  .description{
+    margin-top: 15px;
+    
+    h5{
+      margin:0;
+      font-size:1.1rem;
+      font-weight:600;
+    }
+
+    p{
+      color: var(--color-gray);
+      font-size:.95rem;
     }
   }
 }
 </style>
 
 <style lang="scss">
+.embed-responsive-9by16{
+  &::before{
+    padding-top: 16/9 * 100%;
+  }
+}
+
 .nav-tabs{
   .nav-item{
     margin-bottom:0;
