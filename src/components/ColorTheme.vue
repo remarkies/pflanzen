@@ -1,24 +1,22 @@
 <template>
   <section class="colorTheme">
-    <div class="container">
-      <div class="row">
-        <figure
-          v-for="colorTheme in colorThemes"
-          :key="colorThemes.indexOf(colorTheme)"
-          :class="`col-${12 / colorThemes.length}`"
-        >
-          <img :src="`img/${colorTheme.src}`" alt />
-          <figcaption>
-            <div
-              class="color"
-              v-for="color in colorTheme.colors"
-              :key="colorTheme.colors.indexOf(color)"
-            >
-              <span :style="{ backgroundColor: color }"></span>
-            </div>
-          </figcaption>
-        </figure>
-      </div>
+    <div class="row">
+      <figure
+        v-for="colorTheme in colorThemes"
+        :key="colorThemes.indexOf(colorTheme)"
+        :class="`col-${12 / colorThemes.length}`"
+      >
+        <img :src="`img/${colorTheme.src}`" alt />
+        <figcaption>
+          <div
+            class="color"
+            v-for="color in colorTheme.colors"
+            :key="colorTheme.colors.indexOf(color)"
+          >
+            <span :style="{ backgroundColor: color }"></span>
+          </div>
+        </figcaption>
+      </figure>
     </div>
   </section>
 </template>
