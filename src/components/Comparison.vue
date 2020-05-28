@@ -1,5 +1,6 @@
 <template>
   <section class="comparison" :class="{ 'second-dimension' : isSecondDimension }">
+    <h2>{{ title }}</h2>
     <b-tabs no-nav-style nav-wrapper-class="own-tab--controls" :class="{ 'own-tab--small' : isSecondDimension }">
       <b-tab v-for="(item, index) in comparisonData" :key="index" :title="item.title" title-item-class="own-tab--control" title-link-class="own-tab--control--link">
         <template v-if="isTwoDimensional">
@@ -40,6 +41,10 @@ export default {
     BTab,
   },
   props: {
+    title: {
+      type: String,
+      required: true
+    },
     comparisonData: {
       type: Array,
       required: true,

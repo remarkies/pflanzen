@@ -7,6 +7,8 @@
     <ComparisonSalad />
 
     <ComparisonSound />
+
+    <ComparisonPotato />
   </div>
 </template>
 
@@ -15,12 +17,14 @@
 import Header from "@/components/Header";
 import ComparisonSalad from "@/components/ComparisonSalad";
 import ComparisonSound from "@/components/ComparisonSound";
+import ComparisonPotato from "@/components/ComparisonPotato";
 
 export default {
   name: "Comparison",
   components: {
     ComparisonSalad,
     ComparisonSound,
+    ComparisonPotato,
     Header
   },
   data () {

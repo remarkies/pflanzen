@@ -1,6 +1,6 @@
 <template>
   <div class="container-lg">
-    <Comparison :comparison-data="comparison" :imagePath="imagePath" />
+    <Comparison :comparison-data="comparison" :imagePath="imagePath" :title="title" />
   </div>
 </template>
 
@@ -14,6 +14,7 @@ export default {
   },
   data () {
     return {
+      title: 'Anbau von Salat',
       imagePath: 'salad',
       comparison: [
         {
