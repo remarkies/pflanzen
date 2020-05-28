@@ -2,6 +2,9 @@ let functions = {
     createImage(path, width) {
         return { path: path, width: width}
     },
+    createVideo(path, width, ratio) {
+        return { path: path, width: width, ratio: ratio}
+    },
     createRow(images) {
         return { images: images };
     },

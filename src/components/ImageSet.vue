@@ -2,7 +2,8 @@
   <div class="container">
     <div class="row" :key="row.id" v-for="row in imageSet.rows">
       <div :class="'col-'+image.width" :key="image.path" v-for="image in row.images">
-        <a @click="initPhotoSwipe(image.path)">
+        <CustomVideo v-if="image.ratio !== undefined" :video="image"/>
+        <a v-if="image.ratio === undefined" @click="initPhotoSwipe(image.path)">
           <img class="img" :src="image.path" ref="photoSwipeImages" />
         </a>
       </div>
@@ -21,9 +22,11 @@
 
 <script>
 import EventBus from '../modules/EventBus';
+import CustomVideo from "@/components/CustomVideo";
 
 export default {
   name: "imageSet",
+  components: {CustomVideo},
   props: {
     imageSet: Object
   },

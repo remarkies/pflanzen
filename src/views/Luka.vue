@@ -33,8 +33,7 @@
                         ]),
                         DataSet.createImageSet("Session 02", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/luka/topf/session02/Topf-Session2-2.jpg", 5),
-                                DataSet.createImage("/luka/topf/session02/Topf-Session2-4.jpg", 7)
+                                DataSet.createVideo("https://www.youtube.com/embed/Ks80rsSehpU", 12, "16by9")
                             ])
                         ]),
                         DataSet.createImageSet("Session 03", true, [
