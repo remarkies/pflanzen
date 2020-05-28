@@ -1,6 +1,6 @@
 <template>
     <div class="embed-responsive" :class="'embed-responsive-'+video.ratio">
-        <iframe class="embed-responsive-item" :src="video.path" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" :src="video.path" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </template>
 

@@ -27,31 +27,36 @@
                     [
                         DataSet.createImageSet("4 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/luka/topf/session01/Topf-Session1-2.jpg", 12)
+                                DataSet.createImage("/img/luka/topf/session01/Topf-Session1-2.jpg", 12)
                             ])
                         ]),
                         DataSet.createImageSet("7 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/luka/topf/session03/Topf-Session3-2.jpg", 5),
-                                DataSet.createImage("/luka/topf/session03/Topf-Session3-8.jpg", 7)
+                                DataSet.createImage("/img/luka/topf/session03/Topf-Session3-2.jpg", 4),
+                                DataSet.createImage("/img/luka/topf/session03/Topf-Session3-8.jpg", 8)
                             ])
                         ]),
                         DataSet.createImageSet("4 Tage", true, [
                             DataSet.createRow([
 
-                                DataSet.createImage("/luka/topf/session05/Topf-Session5-5.jpg", 4),
-                                DataSet.createImage("/luka/topf/session05/Topf-Session5-2.jpg", 8),
+                                DataSet.createImage("/img/luka/topf/session05/Topf-Session5-5.jpg", 4),
+                                DataSet.createImage("/img/luka/topf/session05/Topf-Session5-2.jpg", 8),
                             ])
                         ]),
                         DataSet.createImageSet("8 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/luka/topf/session06/Topf-Session6-5.jpg", 4),
-                                DataSet.createImage("/luka/topf/session06/Topf-Session6-6.jpg", 8)
+                                DataSet.createImage("/img/luka/topf/session06/Topf-Session6-5.jpg", 4),
+                                DataSet.createImage("/img/luka/topf/session06/Topf-Session6-6.jpg", 8)
+                            ])
+                        ]),
+                        DataSet.createImageSet("2 Tage", true, [
+                            DataSet.createRow([
+                                DataSet.createVideo("https://www.youtube.com/embed/V8cSKbnyRiQ", 12, "3by2")
                             ])
                         ]),
                         DataSet.createImageSet("", false, [
                             DataSet.createRow([
-                                DataSet.createVideo("https://www.youtube.com/embed/Ks80rsSehpU", 12, "16by9")
+                                DataSet.createVideo("https://www.youtube.com/embed/4xh0uyelH6A", 12, "16by9")
                             ])
                         ])
                     ]);

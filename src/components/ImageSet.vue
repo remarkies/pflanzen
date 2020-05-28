@@ -57,6 +57,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .embed-responsive-3by2{
+    &::before{
+      padding-top: 2/3 * 100%;
+    }
+  }
+
 .col-12 {
   padding: 4px;
 }
