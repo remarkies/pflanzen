@@ -3,7 +3,6 @@
         <Header name="Luka" :description="description" />
         <div class="container-lg">
             <Article :key="article.title" :article="article" v-for="article in articles"/>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ks80rsSehpU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 </template>
@@ -33,8 +32,7 @@
                         ]),
                         DataSet.createImageSet("Session 02", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/luka/topf/session02/Topf-Session2-2.jpg", 5),
-                                DataSet.createImage("/luka/topf/session02/Topf-Session2-4.jpg", 7)
+                                DataSet.createVideo("https://www.youtube.com/embed/Ks80rsSehpU", 12, "16by9")
                             ])
                         ]),
                         DataSet.createImageSet("Session 03", true, [
