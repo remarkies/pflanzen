@@ -25,44 +25,33 @@
             init: function() {
                 let article = DataSet.createArticle("Gemüsetopf","Die Bepflanzung eines Gemüsetopfes war der Versuch den daraus folgenden Wachstum fotografisch festzuhalten. Es wurden Kopfsalat- und Schnittsalatsetzlinge gepflanzt, dazu vorgekeimte Petersilie und Radieschensamen verteilt.",
                     [
-                        DataSet.createImageSet("Session 01", true, [
+                        DataSet.createImageSet("4 Tage", true, [
                             DataSet.createRow([
                                 DataSet.createImage("/luka/topf/session01/Topf-Session1-2.jpg", 12)
                             ])
                         ]),
-                        DataSet.createImageSet("Session 02", true, [
-                            DataSet.createRow([
-                                DataSet.createVideo("https://www.youtube.com/embed/Ks80rsSehpU", 12, "16by9")
-                            ])
-                        ]),
-                        DataSet.createImageSet("Session 03", true, [
+                        DataSet.createImageSet("7 Tage", true, [
                             DataSet.createRow([
                                 DataSet.createImage("/luka/topf/session03/Topf-Session3-2.jpg", 5),
-                                DataSet.createImage("/luka/topf/session03/Topf-Session3-3.jpg", 7),
-                                DataSet.createImage("/luka/topf/session03/Topf-Session3-4.jpg", 6),
-                                DataSet.createImage("/luka/topf/session03/Topf-Session3-5.jpg", 6),
-                                DataSet.createImage("/luka/topf/session03/Topf-Session3-6.jpg", 4),
-                                DataSet.createImage("/luka/topf/session03/Topf-Session3-8.jpg", 8)
+                                DataSet.createImage("/luka/topf/session03/Topf-Session3-8.jpg", 7)
                             ])
                         ]),
-                        DataSet.createImageSet("Lorem ipsum dolor sit amet,...", false, [
+                        DataSet.createImageSet("4 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/luka/topf/session05/Topf-Session5-1.jpg", 8),
-                                DataSet.createImage("/luka/topf/session05/Topf-Session5-2.jpg", 4),
-                                DataSet.createImage("/luka/topf/session05/Topf-Session5-5.jpg", 2),
-                                DataSet.createImage("/luka/topf/session05/Topf-Session5-4.jpg", 6),
-                                DataSet.createImage("/luka/topf/session05/Topf-Session5-6.jpg", 4),
-                                DataSet.createImage("/luka/topf/session05/Topf-Session5-9.jpg", 6),
-                                DataSet.createImage("/luka/topf/session05/Topf-Session5-10.jpg", 6)
+
+                                DataSet.createImage("/luka/topf/session05/Topf-Session5-5.jpg", 4),
+                                DataSet.createImage("/luka/topf/session05/Topf-Session5-2.jpg", 8),
+                            ])
+                        ]),
+                        DataSet.createImageSet("8 Tage", true, [
+                            DataSet.createRow([
+                                DataSet.createImage("/luka/topf/session06/Topf-Session6-5.jpg", 4),
+                                DataSet.createImage("/luka/topf/session06/Topf-Session6-6.jpg", 8)
                             ])
                         ]),
                         DataSet.createImageSet("", false, [
                             DataSet.createRow([
-                                DataSet.createImage("/luka/topf/session06/Topf-Session6-1.jpg", 5),
-                                DataSet.createImage("/luka/topf/session06/Topf-Session6-2.jpg", 4),
-                                DataSet.createImage("/luka/topf/session06/Topf-Session6-7.jpg", 3),
-                                DataSet.createImage("/luka/topf/session06/Topf-Session6-5.jpg", 6),
-                                DataSet.createImage("/luka/topf/session06/Topf-Session6-6.jpg", 6)
+                                DataSet.createVideo("https://www.youtube.com/embed/Ks80rsSehpU", 12, "16by9")
                             ])
                         ])
                     ]);
