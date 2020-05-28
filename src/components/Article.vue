@@ -1,8 +1,10 @@
 <template>
   <div class="article">
-    <h2>{{article.title}}</h2>
-    <p class="subtitle">{{article.description}}</p>
-    <ImageSet :image-set="imageSet" :key="imageSet.title" v-for="imageSet in article.imageSets"/>
+    <h2><slot name="title">{{ article.title }}</slot></h2>
+    <p class="subtitle"><slot name="title">{{ article.description }}</slot></p>
+    <slot name="content">
+      <ImageSet :image-set="imageSet" :key="imageSet.title" v-for="imageSet in article.imageSets"/>
+    </slot>
   </div>
 </template>
 
@@ -11,11 +13,13 @@
 
   export default {
     name: "Article",
-    components: {ImageSet},
+    components: { 
+      ImageSet
+    },
     props: {
       article: {
         type: Object,
-        required: true
+        required: false
       }
     },
     mounted: function() {

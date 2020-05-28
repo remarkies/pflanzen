@@ -1,20 +1,35 @@
 <template>
   <div>
-    <Header :description="description">
+    <Header :description="headerDescription">
         Vergleich von <span class="color-primary">Ökosystemen</span>
     </Header>
 
-    <ComparisonSalad />
+    <div class="container-lg">
+      <Article :article="comparisonSalad">
+        <template v-slot:content>
+          <ComparisonSalad />
+        </template>
+      </Article>
 
-    <ComparisonSound />
+      <Article :article="comparisonSound">
+        <template v-slot:content>
+          <ComparisonSound />
+        </template>
+      </Article>
 
-    <ComparisonPotato />
+      <Article :article="comparisonPotato">
+        <template v-slot:content>
+          <ComparisonPotato />
+        </template>
+      </Article>
+    </div>
   </div>
 </template>
 
 <script>
 // import Comparison from "@/components/Comparison";
 import Header from "@/components/Header";
+import Article from '@/components/Article';
 import ComparisonSalad from "@/components/ComparisonSalad";
 import ComparisonSound from "@/components/ComparisonSound";
 import ComparisonPotato from "@/components/ComparisonPotato";
@@ -22,6 +37,7 @@ import ComparisonPotato from "@/components/ComparisonPotato";
 export default {
   name: "Comparison",
   components: {
+    Article,
     ComparisonSalad,
     ComparisonSound,
     ComparisonPotato,
@@ -29,7 +45,19 @@ export default {
   },
   data () {
     return {
-      description: 'Lorem Ipsum'
+      headerDescription: 'Lorem Ipsum',
+      comparisonSalad: {
+        title: 'Anbau von Salat',
+        description: 'Beschreibung Salat'
+      },
+      comparisonPotato: {
+        title: 'Veränderung von Kartoffeln',
+        description: 'Beschreibung Kartoffeln'
+      },
+      comparisonSound: {
+        title: 'Klänge der Natur',
+        description: 'Beschreibung Klänge'
+      }
     }
   }
 }

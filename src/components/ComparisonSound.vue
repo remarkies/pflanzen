@@ -1,7 +1,5 @@
 <template>
-  <div class="container-lg">
-    <Comparison :comparison-data="comparison" :title="title" video is-two-dimensional />
-  </div>
+  <Comparison :comparison-data="comparison" video is-two-dimensional />
 </template>
 
 <script>
@@ -14,7 +12,6 @@ export default {
   },
   data () {
     return {
-      title: 'Klänge der Natur',
       comparison: [
         {
           title: 'Woche 1',
