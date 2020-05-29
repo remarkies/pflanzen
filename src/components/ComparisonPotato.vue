@@ -1,16 +1,19 @@
 <template>
-  <Comparison :comparison-data="comparison" :imagePath="imagePath" />
+  <Comparison
+    :comparison-data="comparison"
+    :image-path="imagePath"
+  />
 </template>
 
 <script>
-import Comparison from "@/components/Comparison";
+import Comparison from '@/components/Comparison';
 
 export default {
   name: 'ComparisonPotato',
   components: {
-    Comparison
+    Comparison,
   },
-  data () {
+  data() {
     return {
       imagePath: 'potato',
       comparison: [
@@ -21,19 +24,19 @@ export default {
             {
               image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
               place: 'Schmitten',
-              person: 'Fabien'
+              person: 'Fabien',
             },
             {
               image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
               place: 'Hünibach',
-              person: 'André'
+              person: 'André',
             },
             {
               image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
               place: 'Adliswil',
-              person: 'Luka'
+              person: 'Luka',
             },
-          ]
+          ],
         },
         {
           title: 'Woche 2',
@@ -42,19 +45,19 @@ export default {
             {
               image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
               place: 'Schmitten',
-              person: 'Fabien'
+              person: 'Fabien',
             },
             {
               image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
               place: 'Hünibach',
-              person: 'André'
+              person: 'André',
             },
             {
               image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
               place: 'Adliswil',
-              person: 'Luka'
+              person: 'Luka',
             },
-          ]
+          ],
         },
         {
           title: 'Woche 3',
@@ -63,19 +66,19 @@ export default {
             {
               image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
               place: 'Schmitten',
-              person: 'Fabien'
+              person: 'Fabien',
             },
             {
               image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
               place: 'Hünibach',
-              person: 'André'
+              person: 'André',
             },
             {
               image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
               place: 'Adliswil',
-              person: 'Luka'
+              person: 'Luka',
             },
-          ]
+          ],
         },
         {
           title: 'Woche 4',
@@ -84,22 +87,22 @@ export default {
             {
               image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
               place: 'Schmitten',
-              person: 'Fabien'
+              person: 'Fabien',
             },
             {
               image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
               place: 'Hünibach',
-              person: 'André'
+              person: 'André',
             },
             {
               image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
               place: 'Adliswil',
-              person: 'Luka'
+              person: 'Luka',
             },
-          ]
-        }
-      ]
-    }
-  }
-}
+          ],
+        },
+      ],
+    };
+  },
+};
 </script>

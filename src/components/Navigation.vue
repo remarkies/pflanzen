@@ -3,12 +3,28 @@
     <div class="container-lg">
       <div class="navigation--content">
         <ul>
-          <li><router-link :to="{name: 'comparison'}">Vergleich</router-link></li>
+          <li>
+            <router-link :to="{name: 'comparison'}">
+              Vergleich
+            </router-link>
+          </li>
         </ul>
         <ul>
-          <li><router-link :to="{name: 'andre'}">André</router-link></li>
-          <li><router-link :to="{name: 'luka'}">Luka</router-link></li>
-          <li><router-link :to="{name: 'fabien'}">Fabien</router-link></li>
+          <li>
+            <router-link :to="{name: 'andre'}">
+              André
+            </router-link>
+          </li>
+          <li>
+            <router-link :to="{name: 'luka'}">
+              Luka
+            </router-link>
+          </li>
+          <li>
+            <router-link :to="{name: 'fabien'}">
+              Fabien
+            </router-link>
+          </li>
         </ul>
       </div>
     </div>
@@ -17,8 +33,8 @@
 
 <script>
 export default {
-  name: "Home"
-}
+  name: 'Home',
+};
 </script>
 
 <style lang="scss" scoped>
@@ -29,7 +45,7 @@ nav{
   width:100%;
   background:white;
   border-bottom: 2px solid var(--color-gray-light);
-  z-index: 1;
+  z-index: 100;
 
   .navigation--content{
     display:flex;
@@ -39,7 +55,7 @@ nav{
 
   ul{
     padding:0;
-    margin:0;
+    margin:0 -20px;
     list-style-type: none;
     display: flex;
 
