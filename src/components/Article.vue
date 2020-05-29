@@ -61,7 +61,7 @@ export default {
 
 <style lang="scss" scoped>
 .article {
-  padding: 90px 0px;
+  margin: 80px 0px 40px;
 }
 
 h2{
