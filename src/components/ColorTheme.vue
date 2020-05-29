@@ -2,16 +2,16 @@
   <section class="colorTheme">
     <div class="row">
       <figure
-        v-for="colorTheme in colorThemes"
-        :key="colorThemes.indexOf(colorTheme)"
+        v-for="(colorTheme, index) in colorThemes"
+        :key="index"
         :class="`col-${12 / colorThemes.length}`"
       >
         <img :src="`img/${colorTheme.src}`" alt />
         <figcaption>
           <div
             class="color"
-            v-for="color in colorTheme.colors"
-            :key="colorTheme.colors.indexOf(color)"
+            v-for="(color, index) in colorTheme.colors"
+            :key="index"
           >
             <span :style="{ backgroundColor: color }"></span>
           </div>
