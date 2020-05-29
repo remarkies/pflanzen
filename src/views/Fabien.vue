@@ -2,8 +2,12 @@
   <div>
     <Header name="Fabien" :description="description" />
     <section class="container-xl">
-      <ColorTheme :colorThemes="colorThemes" />
-      <Article v-for="article in articles" :key="article.title" :article="article" />
+      <Article :article="colorThemes" collapsible>
+        <template v-slot:content>
+          <ColorTheme :color-themes="colorThemes.themes" />
+        </template>
+      </Article>
+      <Article v-for="article in articles" :key="article.title" :article="article" collapsible />
     </section>
   </div>
 </template>
@@ -23,27 +27,34 @@ export default {
   },
   data() {
     return {
-      articles: [],
       description: "",
-      colorThemes: [
-        {
-          src: "fabien/insects/P1010296.jpg",
-          colors: ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"]
-        },
-        {
-          src: "fabien/insects/P1010296.jpg",
-          colors: ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"]
-        },
-        {
-          src: "fabien/insects/P1010296.jpg",
-          colors: ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"]
-        }
-      ]
+      articles: [],
+      colorThemes: {
+        title: "Farbpaletten",
+        description: "Farben aus Bildern extrahieren",
+        themes: [
+          {
+            src: "fabien/insects/P1010296.jpg",
+            colors: ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"]
+          },
+          {
+            src: "fabien/insects/P1010296.jpg",
+            colors: ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"]
+          },
+          {
+            src: "fabien/insects/P1010296.jpg",
+            colors: ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"]
+          }
+        ]
+      }
     };
   },
+  mounted() {
+    this.initArticles();
+  },
   methods: {
-    initArticles: function() {
-      let insects = DataSet.createArticle(
+    initArticles() {
+      const insects = DataSet.createArticle(
         "Makrofotografie",
         "Insektenwelt des Gartens",
         [
@@ -64,9 +75,6 @@ export default {
       );
       this.articles.push(insects);
     }
-  },
-  mounted() {
-    this.initArticles();
   }
 };
 </script>
