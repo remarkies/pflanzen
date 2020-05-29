@@ -120,10 +120,26 @@ export default {
               DataSet.createImage('/img/andre/salat-thun/set-1/IMG_9909.jpeg', 4),
             ]),
           ]),
+          // 07.05.2020
           DataSet.createImageSet('Kaum waren die Setzlinge im Boden, wurden sie von meiner Katze entdeckt. Um die Salate davor zu schützen, dass die Katze sie ausgräbt oder sich darauf legt, habe ich um jeden Salat kleine Holzstäbchen eingesteckt.', false, [
             DataSet.createRow([
               DataSet.createImage('/img/andre/salat-thun/set-2/IMG_6919.jpeg', 4),
               DataSet.createImage('/img/andre/salat-thun/set-2/20200507-DT4A9090-Web.jpg', 8),
+            ]),
+          ]),
+          DataSet.createImageSet('1 Woche', true, [
+            DataSet.createRow([
+              DataSet.createImage('/img/andre/salat-thun/set-2/20200507-DT4A9089-Web.jpg', 6),
+              DataSet.createImage('/img/andre/salat-thun/set-2/20200507-DT4A9091-Web-2.jpg', 3),
+              DataSet.createImage('/img/andre/salat-thun/set-2/20200507-DT4A9092-Web-2.jpg', 3),
+            ]),
+          ]),
+          DataSet.createImageSet('1 Woche', true, [
+            DataSet.createRow([
+              DataSet.createImage('/img/andre/salat-thun/set-3/20200521-DT4A9187-Web.jpg', 12),
+              DataSet.createImage('/img/andre/salat-thun/set-3/20200521-DT4A9194-Web.jpg', 4),
+              DataSet.createImage('/img/andre/salat-thun/set-3/20200521-DT4A9208-Web.jpg', 4),
+              DataSet.createImage('/img/andre/salat-thun/set-3/20200521-DT4A9203-Web.jpg', 4),
             ]),
           ]),
         ],
