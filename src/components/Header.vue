@@ -2,7 +2,7 @@
   <header>
     <div class="container-lg">
       <h1><slot>Projekte von <span class="color-primary">{{ name }}</span></slot></h1>
-      <p class="description">{{ description }}</p>
+      <p class="description" v-html="description" />
     </div>
   </header>
 </template>
@@ -17,10 +17,10 @@ export default {
     },
     description: {
       type: String,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

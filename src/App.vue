@@ -4,22 +4,22 @@
     <main id="content">
       <router-view />
     </main>
-    <PhotoSwipe/>
+    <PhotoSwipe />
   </div>
 </template>
 
 <script>
+import PhotoSwipe from '@/components/PhotoSwipe';
 import Navigation from './components/Navigation';
-import PhotoSwipe from "@/components/PhotoSwipe";
 
 
 export default {
   name: 'App',
   components: {
     Navigation,
-    PhotoSwipe
+    PhotoSwipe,
   },
-}
+};
 </script>
 
 <style lang="scss">

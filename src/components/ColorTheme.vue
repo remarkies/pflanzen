@@ -6,14 +6,17 @@
         :key="index"
         :class="`col-${12 / colorThemes.length}`"
       >
-        <img :src="`img/${colorTheme.src}`" alt />
+        <img
+          :src="`img/${colorTheme.src}`"
+          alt
+        >
         <figcaption>
           <div
             class="color"
             v-for="(color, index) in colorTheme.colors"
             :key="index"
           >
-            <span :style="{ backgroundColor: color }"></span>
+            <span :style="{ backgroundColor: color }" />
           </div>
         </figcaption>
       </figure>
@@ -23,10 +26,10 @@
 
 <script>
 export default {
-  name: "ColorTheme",
+  name: 'ColorTheme',
   props: {
-    colorThemes: Array
-  }
+    colorThemes: Array,
+  },
 };
 </script>
 

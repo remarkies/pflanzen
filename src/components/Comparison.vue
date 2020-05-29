@@ -1,21 +1,50 @@
 <template>
-  <section class="comparison" :class="{ 'second-dimension' : isSecondDimension }">
-    <b-tabs no-nav-style nav-wrapper-class="own-tab--controls" :class="{ 'own-tab--small' : isSecondDimension }">
-      <b-tab v-for="(item, index) in comparisonData" :key="index" :title="item.title" title-item-class="own-tab--control" title-link-class="own-tab--control--link">
+  <section
+    class="comparison"
+    :class="{ 'second-dimension' : isSecondDimension }"
+  >
+    <b-tabs
+      no-nav-style
+      nav-wrapper-class="own-tab--controls"
+      :class="{ 'own-tab--small' : isSecondDimension }"
+    >
+      <b-tab
+        v-for="(item, index) in comparisonData"
+        :key="index"
+        :title="item.title"
+        title-item-class="own-tab--control"
+        title-link-class="own-tab--control--link"
+      >
         <template v-if="isTwoDimensional">
-          <Comparison :comparisonData="item.timeEntries" video is-second-dimension />
+          <Comparison
+            :comparison-data="item.timeEntries"
+            video
+            is-second-dimension
+          />
         </template>
         <template v-else>
           <div class="row align-items-strech">
-            <div v-for="(innerItem, imageIndex) in item.items" :key="imageIndex" :class="`col-${12 / item.items.length}`">
+            <div
+              v-for="(innerItem, imageIndex) in item.items"
+              :key="imageIndex"
+              :class="`col-${12 / item.items.length}`"
+            >
               <template v-if="!video">
                 <figure>
-                  <img :src="`/img/comparison/${imagePath}/${innerItem.image}`" class="img-fluid" :alt="`Bild von ${innerItem.person} in ${innerItem.place}`">
+                  <img
+                    :src="`/img/comparison/${imagePath}/${innerItem.image}`"
+                    class="img-fluid"
+                    :alt="`Bild von ${innerItem.person} in ${innerItem.place}`"
+                  >
                 </figure>
               </template>
               <template v-else>
                 <div class="embed-responsive embed-responsive-9by16">
-                  <iframe class="embed-responsive-item" :src="`https://www.youtube.com/embed/${innerItem.videoReference}`" allowfullscreen></iframe>
+                  <iframe
+                    class="embed-responsive-item"
+                    :src="`https://www.youtube.com/embed/${innerItem.videoReference}`"
+                    allowfullscreen
+                  />
                 </div>
               </template>
               <section class="description">
@@ -47,28 +76,28 @@ export default {
     imagePath: {
       type: String,
       required: false,
-      default: ''
+      default: '',
     },
     video: {
       type: Boolean,
       required: false,
-      default: false
+      default: false,
     },
     isTwoDimensional: {
       type: Boolean,
       required: false,
-      default: false
+      default: false,
     },
     isSecondDimension: {
       type: Boolean,
       required: false,
-      default: false
-    }
+      default: false,
+    },
   },
-  data () {
-    return {}
-  }
-}
+  data() {
+    return {};
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -88,7 +117,7 @@ export default {
 
   .description{
     margin-top: 15px;
-    
+
     h5{
       margin:0;
       font-size:1.1rem;
@@ -127,7 +156,7 @@ export default {
     &:first-child{
       .own-tab--control--link{
         padding-left:0;
-      }      
+      }
     }
 
     .own-tab--control--link{

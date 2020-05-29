@@ -1,10 +1,28 @@
 <template>
-  <div class="container">
-    <div class="row" :key="row.id" v-for="row in imageSet.rows">
-      <div :class="'col-'+image.width" :key="image.path" v-for="image in row.images">
-        <CustomVideo v-if="image.ratio !== undefined" :video="image"/>
-        <a v-if="image.ratio === undefined" @click="initPhotoSwipe(image.path)">
-          <img class="img" :src="image.path" ref="photoSwipeImages" />
+  <div class="image-set">
+    <div
+      v-for="row in imageSet.rows"
+      :key="row.id"
+      class="row"
+    >
+      <div
+        v-for="image in row.images"
+        :key="image.path"
+        :class="'col-'+image.width"
+      >
+        <CustomVideo
+          v-if="image.ratio !== undefined"
+          :video="image"
+        />
+        <a
+          v-if="image.ratio === undefined"
+          @click="initPhotoSwipe(image.path)"
+        >
+          <img
+            ref="photoSwipeImages"
+            class="img"
+            :src="image.path"
+          >
         </a>
       </div>
     </div>
@@ -13,37 +31,37 @@
       class="space"
       :class="[imageSet.isConnector? 'connector' : 'text']"
     >
-      <div v-if="imageSet.isConnector" class="vertical-line"></div>
-      <p>{{imageSet.text}}</p>
-      <div v-if="imageSet.isConnector" class="vertical-line"></div>
+      <div
+        v-if="imageSet.isConnector"
+        class="vertical-line"
+      />
+      <p>{{ imageSet.text }}</p>
+      <div
+        v-if="imageSet.isConnector"
+        class="vertical-line"
+      />
     </div>
   </div>
 </template>
 
 <script>
+import CustomVideo from '@/components/CustomVideo';
 import EventBus from '../modules/EventBus';
-import CustomVideo from "@/components/CustomVideo";
 
 export default {
-  name: "imageSet",
-  components: {CustomVideo},
+  name: 'ImageSet',
+  components: { CustomVideo },
   props: {
-    imageSet: Object
+    imageSet: Object,
   },
   methods: {
-    initPhotoSwipe: function(imageSrc) {
+    initPhotoSwipe(imageSrc) {
       const imagesSrc = this.imageSet.rows
-        .map(({ images }) => {
-          return images.map(({ path }) => {
-            return path;
-          });
-        })
+        .map(({ images }) => images.map(({ path }) => path))
         .flat();
 
-      let items = [];
-      let dimensions = this.$refs.photoSwipeImages.map(image => {
-        return { w: image.naturalWidth, h: image.naturalHeight };
-      });
+      const items = [];
+      const dimensions = this.$refs.photoSwipeImages.map((image) => ({ w: image.naturalWidth, h: image.naturalHeight }));
       imagesSrc.forEach((src, index) => {
         items.push({ src, ...dimensions[index] });
       });
@@ -51,62 +69,69 @@ export default {
       const index = imagesSrc.indexOf(imageSrc);
 
       EventBus.$emit('init-PhotoSwipe', items, index);
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-  .embed-responsive-3by2{
-    &::before{
-      padding-top: 2/3 * 100%;
-    }
+.embed-responsive-3by2{
+  &::before{
+    padding-top: 2/3 * 100%;
   }
+}
+
+$grid-spacer: 4px;
 
 .col-12 {
-  padding: 4px;
+  padding: $grid-spacer;
 }
 .col-11 {
-  padding: 4px;
+  padding: $grid-spacer;
 }
 .col-10 {
-  padding: 4px;
+  padding: $grid-spacer;
 }
 .col-9 {
-  padding: 4px;
+  padding: $grid-spacer;
 }
 .col-8 {
-  padding: 4px;
+  padding: $grid-spacer;
 }
 .col-7 {
-  padding: 4px;
+  padding: $grid-spacer;
 }
 .col-6 {
-  padding: 4px;
+  padding: $grid-spacer;
 }
 .col-5 {
-  padding: 4px;
+  padding: $grid-spacer;
 }
 .col-4 {
-  padding: 4px;
+  padding: $grid-spacer;
 }
 .col-3 {
-  padding: 4px;
+  padding: $grid-spacer;
 }
 .col-2 {
-  padding: 4px;
+  padding: $grid-spacer;
 }
 .col-1 {
-  padding: 4px;
+  padding: $grid-spacer;
 }
 
 .row {
   align-items: stretch;
+  margin-left: -$grid-spacer;
+  margin-right: -$grid-spacer;
 }
+
 a {
   display: block;
   height: 100%;
+  cursor: pointer;
 }
+
 img {
   width: 100%;
   height: 100%;
