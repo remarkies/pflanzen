@@ -26,16 +26,17 @@
         </a>
       </div>
     </div>
+    <p v-if="imageSet.additionalDescription" class="image-description" v-html="imageSet.additionalDescription" />
     <div
       v-if="imageSet.text.length > 0"
       class="space"
-      :class="[imageSet.isConnector? 'connector' : 'text']"
+      :class="[imageSet.isConnector ? 'connector' : 'text']"
     >
       <div
         v-if="imageSet.isConnector"
         class="vertical-line"
       />
-      <p>{{ imageSet.text }}</p>
+      <p v-html="imageSet.text" />
       <div
         v-if="imageSet.isConnector"
         class="vertical-line"
@@ -50,7 +51,9 @@ import EventBus from '../modules/EventBus';
 
 export default {
   name: 'ImageSet',
-  components: { CustomVideo },
+  components: {
+    CustomVideo
+  },
   props: {
     imageSet: Object,
   },
@@ -142,11 +145,12 @@ img {
 .space {
   display: flex;
   flex-direction: column;
-
   padding: 20px 0px;
+
   p {
     margin: 16px 0px;
   }
+
   .vertical-line {
     background: var(--color-gray-lighter);
     height: 30px;
@@ -165,5 +169,9 @@ img {
 
 .text p {
   text-align: left;
+}
+
+.image-description{
+  margin: 15px 0 5px;
 }
 </style>

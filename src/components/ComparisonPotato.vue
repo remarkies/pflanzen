@@ -27,8 +27,8 @@ export default {
               person: 'Fabien',
             },
             {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
-              place: 'Hünibach',
+              image: 'W1-Andre-IMG_0476.jpeg',
+              place: 'Quinten',
               person: 'André',
             },
             {
@@ -48,8 +48,8 @@ export default {
               person: 'Fabien',
             },
             {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
-              place: 'Hünibach',
+              image: 'W2-Andre-IMG_6482.jpeg',
+              place: 'Quinten',
               person: 'André',
             },
             {
@@ -60,29 +60,8 @@ export default {
           ],
         },
         {
-          title: 'Woche 3',
+          title: 'Woche 5',
           week: 21,
-          items: [
-            {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
-              place: 'Schmitten',
-              person: 'Fabien',
-            },
-            {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
-              place: 'Hünibach',
-              person: 'André',
-            },
-            {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
-              place: 'Adliswil',
-              person: 'Luka',
-            },
-          ],
-        },
-        {
-          title: 'Woche 4',
-          week: 22,
           items: [
             {
               image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',

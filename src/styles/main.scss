@@ -24,9 +24,13 @@ h1{
 }
 
 h2{
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight:600;
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--color-gray-light);
+
+  @include media-breakpoint-down(sm){
+    font-size: 1.75rem;
+  }
 }
