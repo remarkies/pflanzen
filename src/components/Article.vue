@@ -48,13 +48,10 @@ export default {
       default: false
     }
   },
-  data() {
-    return {
-      collapseId: null
-    }
-  },
-  mounted() {
-    this.collapseId = this._uid.toString()
+  computed: {
+    collapseId: function() {
+       return this._uid.toString()
+    },
   },
 };
 </script>
