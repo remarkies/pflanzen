@@ -32,7 +32,7 @@ export default {
               person: 'André',
             },
             {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
+              image: 'Kopfsalat-Luka-1.jpg',
               place: 'Adliswil',
               person: 'Luka',
             },
@@ -53,7 +53,7 @@ export default {
               person: 'André',
             },
             {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
+              image: 'Kopfsalat-Luka-2.jpg',
               place: 'Adliswil',
               person: 'Luka',
             },
@@ -74,7 +74,7 @@ export default {
               person: 'André',
             },
             {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
+              image: 'Kopfsalat-Luka-3.jpg',
               place: 'Adliswil',
               person: 'Luka',
             },
@@ -95,7 +95,7 @@ export default {
               person: 'André',
             },
             {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
+              image: 'Kopfsalat-Luka-4.jpg',
               place: 'Adliswil',
               person: 'Luka',
             },

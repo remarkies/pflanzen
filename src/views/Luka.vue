@@ -66,7 +66,7 @@
                                 DataSet.createImage("/img/luka/wanne/session5/Wanne-3.jpg", 4),
                             ])
                         ]),
-                        DataSet.createImageSet("Im Laufe von circa 4 Wochen hat sich die Zinkwanne sehr schön entwickelt. Alles gesetzte ist stark gewachsen und der Schnittsalat wäre bereit zur Ernte. Zwischenzeitlich mussten Razzien durchgeführt werden, um Schnecken das Weite zu zeigen. Gegossen wurde nur in den ersten paar Tagen, danach Regnete es von alleine. Die Kapuzinerkresse hat mich am meisten überrascht. Sie entwickelte schnell neue Triebe und schoss empor.", false, [
+                        DataSet.createImageSet("Im Laufe von circa 4 Wochen hat sich die Zinkwanne sehr schön entwickelt. Alles Gesetzte ist stark gewachsen und der Schnittsalat wäre bereit zur Ernte. Zwischenzeitlich mussten Razzien durchgeführt werden, um Schnecken das Weite zu zeigen. Gegossen wurde nur in den ersten paar Tagen, danach regnete es von alleine. Die Kapuzinerkresse hat mich am meisten überrascht. Sie entwickelte schnell neue Triebe und schoss empor.", false, [
                             DataSet.createRow([
                                 DataSet.createImage("/img/luka/wanne/session6/Wanne-6.jpg", 4),
                                 DataSet.createImage("/img/luka/wanne/session6/Wanne-4.jpg", 4),

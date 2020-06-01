@@ -32,14 +32,14 @@ export default {
               person: 'André',
             },
             {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
+              image: 'Kartoffel-Luka-1.jpg',
               place: 'Adliswil',
               person: 'Luka',
             },
           ],
         },
         {
-          title: 'Woche 2',
+          title: 'Woche 3',
           week: 20,
           items: [
             {
@@ -53,7 +53,7 @@ export default {
               person: 'André',
             },
             {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
+              image: 'Kartoffel-Luka-2.jpg',
               place: 'Adliswil',
               person: 'Luka',
             },
