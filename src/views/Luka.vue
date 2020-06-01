@@ -18,12 +18,12 @@
         data: function() {
             return {
                 articles: [],
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                description: 'Im Rahmen des Studiengangs Digital Ideation wählte ich das IDA-Modul Pflanzen. Das Ziel war die Auseinandersetzung mit einem von mir bis dahin unvertrauten aber dennoch interessantem Thema, mein Garten und sein Ökosystem. Dies untersuchten meine Studienkollegen und ich anhand der Methoden der ästhetischen Forschung und stellten Vergleiche auf, um mögliche Unterschiede zu entdecken.<br><br>Jeder von uns vertiefte sich noch in ein eigenes Thema. Ich widmete mich dem Wachstum der eigen gesetzten Pflanzen und versuchte mich in diversen Techniken. Ich fand Anwendung in der Foto- und Videografie.'
             }
         },
         methods: {
             initArticles: function() {
-                let wanne = DataSet.createArticle("Zinkwanne","tum fotografiDie Bepflanzung eines Gemüsetopfes war der Versuch den daraus folgenden Wachssch festzuhalten. Es wurden Kopfsalat- und Schnittsalatsetzlinge gepflanzt, dazu vorgekeimte Petersilie und Radieschensamen verteilt.",
+                let wanne = DataSet.createArticle("Gemüsewald","Die Bepflanzung eines Gemüsetopfes war der Versuch eine durchmischte dichte Gemüseeinheit zu erschaffen. Damit der Prozess von Beginn an etwas hergibt, entschied ich mich Pflanzen in unterschiedlichen Stadien hochzuziehen. Den Topf befüllte ich mit Freilanderde und einer Schicht Aussaaterde. Danach pflanzte ich Schnitt- und Kopfsalatsetzlinge, setzte vorgekeimte Petersilie und verteilte Radieschensamen.",
                     [
                         DataSet.createImageSet("3 Tage", false, [
                             DataSet.createRow([
@@ -85,7 +85,7 @@
                         ])
                     ]);
 
-                let topf = DataSet.createArticle("Gemüsetopf","Die Bepflanzung eines Gemüsetopfes war der Versuch den daraus folgenden Wachstum fotografisch festzuhalten. Es wurden Kopfsalat- und Schnittsalatsetzlinge gepflanzt, dazu vorgekeimte Petersilie und Radieschensamen verteilt.",
+                let topf = DataSet.createArticle("Gemüsetopf","Die Bepflanzung eines Gemüsetopfes war der Versuch eine durchmischte dichte Gemüseeinheit zu erschaffen. Damit der Topf von Beginn an etwas hergibt, entschied ich mich Pflanzen in unterschiedlichen Stadien hochzuziehen. Den Topf befüllte ich mit Freilanderde und einer Schicht Aussaaterde. Danach pflanzte ich Schnitt- und Kopfsalatsetzlinge, setzte vorgekeimte Petersilie und verteilte Radieschensamen.",
                     [
                         DataSet.createImageSet("4 Tage", true, [
                             DataSet.createRow([
