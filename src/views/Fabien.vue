@@ -2,11 +2,6 @@
   <div>
     <Header name="Fabien" :description="description" />
     <section class="container-xl">
-      <Article :article="colorThemes" collapsible>
-        <template v-slot:content>
-          <ColorTheme :color-themes="colorThemes.themes" />
-        </template>
-      </Article>
       <Article v-for="article in articles" :key="article.title" :article="article" collapsible />
     </section>
   </div>
@@ -14,7 +9,6 @@
 
 <script>
 import Header from "@/components/Header";
-import ColorTheme from "@/components/ColorTheme";
 import Article from "@/components/Article";
 import DataSet from "@/modules/dataset-generator";
 
@@ -22,31 +16,12 @@ export default {
   name: "Fabien",
   components: {
     Header,
-    ColorTheme,
     Article
   },
   data() {
     return {
       description: "",
       articles: [],
-      colorThemes: {
-        title: "Farbpaletten",
-        description: "Farben aus Bildern extrahieren",
-        themes: [
-          {
-            src: "fabien/insects/P1010296.jpg",
-            colors: ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"]
-          },
-          {
-            src: "fabien/insects/P1010296.jpg",
-            colors: ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"]
-          },
-          {
-            src: "fabien/insects/P1010296.jpg",
-            colors: ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"]
-          }
-        ]
-      }
     };
   },
   mounted() {
@@ -54,6 +29,21 @@ export default {
   },
   methods: {
     initArticles() {
+      const colorThemes = DataSet.createArticle(
+        "Farbpaletten",
+        "Hallo",
+        [
+          DataSet.createImageSet("", false, [
+            DataSet.createRow([
+              DataSet.createImage("/img/fabien/insects/P1010296.jpg", 4, ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"]),
+              DataSet.createImage("/img/fabien/insects/P1010296.jpg", 4, ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"]),
+              DataSet.createImage("/img/fabien/insects/P1010296.jpg", 4, ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"])
+            ])
+          ]),
+        ]
+      );
+      this.articles.push(colorThemes);
+
       const fruits = DataSet.createArticle(
         "Früchte und Beeren",
         "Wir verfügen in unserem über verschiedene Fruchtbäume und Beerensträucher, die uns mit frischen Produkten für Confiture, Desserts, Znüni/Zvieri etc. versorgen.<br><br>Um die Verwandlung von der Blüte zur Frucht festzuhalten, aber auch das Entwicklungsstadium der verschiedenen Pflazen zu vergleichen, habe ich die entsprechenden Pflanzen in den letzten Wochen fotografisch dokumentiert.",

@@ -1,61 +1,46 @@
 <template>
   <div class="image-set">
-    <div
-      v-for="row in imageSet.rows"
-      :key="row.id"
-      class="row"
-    >
-      <div
-        v-for="image in row.images"
-        :key="image.path"
-        :class="'col-'+image.width"
-      >
-        <CustomVideo
-          v-if="image.ratio !== undefined"
-          :video="image"
-        />
-        <a
-          v-if="image.ratio === undefined"
-          @click="initPhotoSwipe(image.path)"
-        >
-          <img
-            ref="photoSwipeImages"
-            class="img"
-            :src="image.path"
-          >
+    <div v-for="row in imageSet.rows" :key="row.id" class="row">
+      <div v-for="image in row.images" :key="image.path" :class="'col-'+image.width">
+        <CustomVideo v-if="image.ratio !== undefined" :video="image" />
+        <a v-if="image.ratio === undefined" @click="initPhotoSwipe(image.path)">
+          <img ref="photoSwipeImages" class="img" :src="image.path" />
         </a>
+        <div class="colors" v-if="image.colors">
+          <div class="color" v-for="(color, index) in image.colors" :key="index">
+            <span :style="{ backgroundColor: color }" />
+          </div>
+        </div>
       </div>
     </div>
-    <p v-if="imageSet.additionalDescription" class="image-description" v-html="imageSet.additionalDescription" />
+    <p
+      v-if="imageSet.additionalDescription"
+      class="image-description"
+      v-html="imageSet.additionalDescription"
+    />
     <div
       v-if="imageSet.text.length > 0"
       class="space"
       :class="[imageSet.isConnector ? 'connector' : 'text']"
     >
-      <div
-        v-if="imageSet.isConnector"
-        class="vertical-line"
-      />
+      <div v-if="imageSet.isConnector" class="vertical-line" />
       <p v-html="imageSet.text" />
-      <div
-        v-if="imageSet.isConnector"
-        class="vertical-line"
-      />
+      <div v-if="imageSet.isConnector" class="vertical-line" />
     </div>
   </div>
 </template>
 
 <script>
-import CustomVideo from '@/components/CustomVideo';
-import EventBus from '../modules/EventBus';
+import CustomVideo from "@/components/CustomVideo";
+import EventBus from "../modules/EventBus";
 
 export default {
-  name: 'ImageSet',
+  name: "ImageSet",
   components: {
     CustomVideo
   },
   props: {
-    imageSet: Object,
+    imageSet: Object
   },
   methods: {
     initPhotoSwipe(imageSrc) {
@@ -64,22 +49,25 @@ export default {
         .flat();
 
       const items = [];
-      const dimensions = this.$refs.photoSwipeImages.map((image) => ({ w: image.naturalWidth, h: image.naturalHeight }));
+      const dimensions = this.$refs.photoSwipeImages.map(image => ({
+        w: image.naturalWidth,
+        h: image.naturalHeight
+      }));
       imagesSrc.forEach((src, index) => {
         items.push({ src, ...dimensions[index] });
       });
 
       const index = imagesSrc.indexOf(imageSrc);
 
-      EventBus.$emit('init-PhotoSwipe', items, index);
-    },
-  },
+      EventBus.$emit("init-PhotoSwipe", items, index);
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
-.embed-responsive-3by2{
-  &::before{
+.embed-responsive-3by2 {
+  &::before {
     padding-top: 2/3 * 100%;
   }
 }
@@ -142,6 +130,19 @@ img {
   object-fit: cover;
 }
 
+.colors {
+  width: 100%;
+  display: flex;
+  .color {
+    flex: 1 1 auto;
+    span {
+      display: block;
+      width: 100%;
+      padding-top: 100%;
+    }
+  }
+}
+
 .space {
   display: flex;
   flex-direction: column;
@@ -171,7 +172,7 @@ img {
   text-align: left;
 }
 
-.image-description{
+.image-description {
   margin: 15px 0 5px;
 }
 </style>
