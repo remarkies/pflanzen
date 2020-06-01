@@ -111,13 +111,15 @@
                                 DataSet.createImage("/img/luka/topf/session06/Topf-Session6-6.jpg", 8)
                             ])
                         ]),
-                        DataSet.createImageSet("8 Tage", true, [
+                        DataSet.createImageSet("Durch die geringe Höhe der Pflanzen im Gemüsetopf werden diese kaum vom Winde beweget, weshalb der Topf beim Betrachten sehr statisch wirkt. \n" +
+                            "Die Intervallaufnahme zeigt die laufenden Bewegungen, welche wir im Alltag nicht wahrnehmen.", false, [
                             DataSet.createRow([
                                 DataSet.createImage("/img/luka/topf/session07/Topf-7.jpg", 8),
                                 DataSet.createImage("/img/luka/topf/session07/Topf-4.jpg", 4),
                             ])
                         ]),
-                        DataSet.createImageSet("2 Tage", true, [
+                        DataSet.createImageSet("Die Querschnitt-Aufnahme war ein Experiment die Dichte und Diversität des Topfes darzustellen und das Wachstum der vergangenen Wochen zu veranschaulichen. <br/>" +
+                            "Die grosse Herausforderung hierbei war die Handhabung der Kamera und dem speziellen Objektiv (Laowa - Macro Probe). Das Makro-Objektiv ist durch ihre maximale Blendenöffnung von f/14 im Normalfall an eine helle Umgebung oder externe Lichtquelle angewiesen. In meinem Fall war dies die pralle Mittagssonne, weil es sonst nicht genügend natürliches Licht im Gestrüpp hatte. Die nächste Hürde war das gleichmässige zurückziehen der Kamera, wofür nachträglich eine Kameraschiene besorgt wurde. Hierbei handelte es sich leider nicht um eine automatische Schiene, sondern musste von Hand gezogen werden. Zu Beginn versuchte ich die maximal mögliche Schärfentiefe zu bekommen (f/40), was dazu führte, dass beim Betrachten der Resultate kleine schwarze fixe Punkte erschienen sind. Trotz versuchter Reinigung des Kamerasensors verschwanden die Punkte nicht und entschied mich deswegen die Schärfentiefe zu minimieren, sodass die Punkte verschwanden.", false, [
                             DataSet.createRow([
                                 DataSet.createVideo("https://www.youtube.com/embed/V8cSKbnyRiQ", 12, "3by2")
                             ])
