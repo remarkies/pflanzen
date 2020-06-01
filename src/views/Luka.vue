@@ -23,38 +23,39 @@
         },
         methods: {
             initArticles: function() {
-                let wanne = DataSet.createArticle("Gemüsewald","Die Bepflanzung eines Gemüsetopfes war der Versuch eine durchmischte dichte Gemüseeinheit zu erschaffen. Damit der Prozess von Beginn an etwas hergibt, entschied ich mich Pflanzen in unterschiedlichen Stadien hochzuziehen. Den Topf befüllte ich mit Freilanderde und einer Schicht Aussaaterde. Danach pflanzte ich Schnitt- und Kopfsalatsetzlinge, setzte vorgekeimte Petersilie und verteilte Radieschensamen.",
+                let wanne = DataSet.createArticle("Gemüsewald","Neben dem Gemüsetopf entschied ich mich eine von Unkraut zugewachsene Zinkwanne neu zu bepflanzen. Dafür entfernte ich das Unkraut und vermischte die vorhandene Erde mit Freilanderde. Ich recherchierte im Internet, welche Pflanzen nebeneinander gepflanzt werden dürfen und stellte mir eine Liste mit Pflanzen zusammen, die sich äusserlich stark unterscheiden, um ein Interessantes Zusammenleben zu erzeugen. Ich besorgte Mangold, Pfefferminze, Süsskartoffel, Kapuzinerkresse, gemischte Salatsetzlinge und Radieschensamen. Damit einzelne Exemplare nicht untergehen, setzte ich die grösseren Pflanzen weiter hinten und die Kleineren davor. Die Radieschensamen wurden am Rand entlang verteilt und mit Aussaaterde überdeckt.",
                     [
-                        DataSet.createImageSet("3 Tage", false, [
+                        DataSet.createImageSet("3 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/wanne/session1/Wanne-3.jpg", 12)
+                                DataSet.createImage("/img/luka/wanne/session1/Wanne-3.jpg", 12),
+                                DataSet.createImage("/img/luka/wanne/session1/Wanne-2.jpg", 3),
+                                DataSet.createImage("/img/luka/wanne/session1/Wanne_Session_1-3.jpg", 9),
+                                DataSet.createImage("/img/luka/wanne/session1/Wanne_Session_1-1.jpg", 5),
+                                DataSet.createImage("/img/luka/wanne/session1/Wanne_Session_1-2.jpg", 7),
                             ])
                         ]),
                         DataSet.createImageSet("3 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/wanne/session1/Wanne-2.jpg", 4),
-                                DataSet.createImage("/img/luka/wanne/session1/Wanne-1.jpg", 8)
-                            ])
-                        ]),
-                        DataSet.createImageSet("3 Tage", true, [
-                            DataSet.createRow([
-                                DataSet.createImage("/img/luka/wanne/session2/Wanne-4.jpg", 3),
-                                DataSet.createImage("/img/luka/wanne/session2/Wanne-1.jpg", 5),
-                                DataSet.createImage("/img/luka/wanne/session2/Wanne-3.jpg", 4)
+                                DataSet.createImage("/img/luka/wanne/session2/Wanne_Session_2-1.jpg", 12),
+                                DataSet.createImage("/img/luka/wanne/session2/Wanne-1.jpg", 6),
+                                DataSet.createImage("/img/luka/wanne/session2/Wanne-3.jpg", 6)
                             ])
                         ]),
                         DataSet.createImageSet("5 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/wanne/session3/Wanne-6.jpg", 4),
-                                DataSet.createImage("/img/luka/wanne/session3/Wanne-5.jpg", 4),
-                                DataSet.createImage("/img/luka/wanne/session3/Wanne-3.jpg", 4)
+                                DataSet.createImage("/img/luka/wanne/session3/Wanne-5.jpg", 12),
+
+                                DataSet.createImage("/img/luka/wanne/session3/Wanne_Session_3-3.jpg", 6),
+                                DataSet.createImage("/img/luka/wanne/session3/Wanne-3.jpg", 6),
                             ])
                         ]),
                         DataSet.createImageSet("4 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/wanne/session4/Wanne-2.jpg", 4),
-                                DataSet.createImage("/img/luka/wanne/session4/Wanne-4.jpg", 4),
-                                DataSet.createImage("/img/luka/wanne/session4/Wanne-3.jpg", 4)
+                                DataSet.createImage("/img/luka/wanne/session4/Wanne_Session_4-2.jpg", 4),
+                                DataSet.createImage("/img/luka/wanne/session4/Wanne_Session_4-1.jpg", 8),
+
+                                DataSet.createImage("/img/luka/wanne/session4/Wanne-5.jpg", 6),
+                                DataSet.createImage("/img/luka/wanne/session4/Wanne_Session_4-3.jpg", 6),
                             ])
                         ]),
                         DataSet.createImageSet("5 Tage", true, [
@@ -65,7 +66,7 @@
                                 DataSet.createImage("/img/luka/wanne/session5/Wanne-3.jpg", 4),
                             ])
                         ]),
-                        DataSet.createImageSet("2 Tage", true, [
+                        DataSet.createImageSet("Im Laufe von circa 4 Wochen hat sich die Zinkwanne sehr schön entwickelt. Alles gesetzte ist stark gewachsen und der Schnittsalat wäre bereit zur Ernte. Zwischenzeitlich mussten Razzien durchgeführt werden, um Schnecken das Weite zu zeigen. Gegossen wurde nur in den ersten paar Tagen, danach Regnete es von alleine. Die Kapuzinerkresse hat mich am meisten überrascht. Sie entwickelte schnell neue Triebe und schoss empor.", false, [
                             DataSet.createRow([
                                 DataSet.createImage("/img/luka/wanne/session6/Wanne-6.jpg", 4),
                                 DataSet.createImage("/img/luka/wanne/session6/Wanne-4.jpg", 4),
@@ -73,7 +74,8 @@
                                 DataSet.createImage("/img/luka/wanne/session6/Wanne-9.jpg", 12)
                             ])
                         ]),
-                        DataSet.createImageSet("3 Tage", true, [
+                        DataSet.createImageSet("Geplant war erneut eine Intervallaufnahme für die Zinkwanne. Bei Betrachtung des Ergebnisses war die Feststellung, dass die Pflanzen zu stark vom Winde bewegt werden und entschied mich daher das Endresultat der Zinkwanne mit dem \"Macro Probe\"-Objektiv festzuhalten.<br/>" +
+                            "Hier verwendete ich den Ansatz so wenig Pflanzen, wie möglich zu berühren, damit die Zwischenräume deutlich grösser Wirken und ein sogenannter Gemüsewald entsteht. Durch die neue Herangehensweise stieg auch die Herausforderung an die ruhige Hand, denn ungleichmässige Bewegungen werden viel schneller ersichtlich.", false, [
                             DataSet.createRow([
                                 DataSet.createImage("/img/luka/wanne/session6/Wanne-1.jpg", 12),
                             ])
