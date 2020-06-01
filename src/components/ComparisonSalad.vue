@@ -69,7 +69,7 @@ export default {
               person: 'Fabien',
             },
             {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
+              image: 'W3-Andre-20200528-DT4A9305-Web.jpg',
               place: 'Hünibach',
               person: 'André',
             },

@@ -1,16 +1,20 @@
 const functions = {
-  createImage(path, width) {
-    return { path, width };
+  createImage(path, width, colors) {
+    return { path, width, colors: colors || null };
   },
+
   createVideo(path, width, ratio) {
     return { path, width, ratio };
   },
+
   createRow(images) {
     return { images };
   },
-  createImageSet(text, isConnector, rows) {
+
+  createImageSet(text, isConnector, rows, additionalDescription = '') {
     const imageSet = {
       text,
+      additionalDescription,
       isConnector,
       rows: [],
     };
@@ -23,6 +27,7 @@ const functions = {
     }
     return imageSet;
   },
+
   createArticle(title, description, imageSets) {
     const article = {
       title,
@@ -34,6 +39,7 @@ const functions = {
       article.imageSets.push({
         id: i,
         text: imageSets[i].text,
+        additionalDescription: imageSets[i].additionalDescription,
         isConnector: imageSets[i].isConnector,
         rows: imageSets[i].rows,
       });
