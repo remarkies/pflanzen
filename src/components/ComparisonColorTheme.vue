@@ -1,84 +1,93 @@
 <template>
-  <div class="row">
-    <div
-      :class="`colorTheme col-${12 / colorThemes.length}`"
-      v-for="(colorTheme, index) in colorThemes"
-      :key="index"
-    >
-      <img :src="colorTheme.src" :alt="`Bild von ${colorTheme.person}`" />
-      <section class="colorsWrapper">
-        <div class="colors" v-for="(color, index) in colorTheme.colors" :key="index">
-          <span :style="{ backgroundColor: color }" />
-        </div>
-      </section>
-      <section class="description">
-        <h5>{{ colorTheme.place }}</h5>
-        <p>{{ colorTheme.person }}</p>
-      </section>
-    </div>
-  </div>
+  <Comparison
+    :comparison-data="comparison"
+    :image-path="imagePath"
+  />
 </template>
 
 <script>
+import Comparison from '@/components/Comparison';
+
 export default {
   name: "ComparisonColorTheme",
+  components: {
+    Comparison,
+  },
   data() {
     return {
-      colorThemes: [
+      imagePath: 'colorTheme',
+      comparison: [
         {
-          src: "/img/comparison/colorTheme/Farbpalette-Fabien.jpg",
-          colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"],
-          place: "Schmitten",
-          person: "Fabien"
+          title: 'Close-Up',
+          items: [
+            {
+              image: 'Farbpalette-Fabien.jpg',
+              person: 'Fabien',
+              rule: 'test',
+              colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
+            },
+            {
+              image: 'Farbpalette-Fabien.jpg',
+              person: 'Fabien',
+              rule: 'test',
+              colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
+            },
+            {
+              image: 'Farbpalette-Fabien.jpg',
+              person: 'Fabien',
+              rule: 'test',
+              colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
+            },
+          ]
         },
         {
-          src: "/img/comparison/colorTheme/Farbpalette-Luka.jpg",
-          colors: ["#164E00", "#338200", "#73B600", "#C1629F", "#FFDA00"],
-          place: "Hünibach",
-          person: "André"
+          title: 'Aussicht',
+          items: [
+            {
+              image: 'Farbpalette-Fabien.jpg',
+              person: 'Fabien',
+              rule: 'test',
+              colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
+            },
+            {
+              image: 'Farbpalette-Fabien.jpg',
+              person: 'Fabien',
+              rule: 'test',
+              colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
+            },
+            {
+              image: 'Farbpalette-Fabien.jpg',
+              person: 'Fabien',
+              rule: 'test',
+              colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
+            },
+          ]
         },
         {
-          src: "/img/comparison/colorTheme/Farbpalette-Luka.jpg",
-          colors: ["#164E00", "#338200", "#73B600", "#C1629F", "#FFDA00"],
-          place: "Adliswil",
-          person: "Luka"
+          title: 'Wiese',
+          items: [
+            {
+              image: 'Farbpalette-Fabien.jpg',
+              person: 'Fabien',
+              rule: 'test',
+              colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
+            },
+            {
+              image: 'Farbpalette-Fabien.jpg',
+              person: 'Fabien',
+              rule: 'test',
+              colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
+            },
+            {
+              image: 'Farbpalette-Fabien.jpg',
+              person: 'Fabien',
+              rule: 'test',
+              colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
+            },
+          ]
         }
       ]
     };
   }
 };
 </script>
-
-<style lang="scss" scoped>
-.colorTheme {
-  img {
-    width: 100%;
-  }
-  .colorsWrapper {
-    display: flex;
-    width: 100%;
-    .colors {
-      flex: 1 1 auto;
-      span {
-        display: block;
-        width: 100%;
-        padding-top: 100%;
-      }
-    }
-  }
-  .description {
-    margin-top: 15px;
-
-    h5 {
-      margin: 0;
-      font-size: 1.1rem;
-      font-weight: 600;
-    }
-
-    p {
-      color: var(--color-gray);
-      font-size: 0.95rem;
-    }
-  }
-}
-</style>

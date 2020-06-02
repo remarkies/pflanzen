@@ -1,8 +1,5 @@
 <template>
-  <section
-    class="comparison"
-    :class="{ 'second-dimension' : isSecondDimension }"
-  >
+  <section class="comparison" :class="{ 'second-dimension' : isSecondDimension }">
     <b-tabs
       no-nav-style
       nav-wrapper-class="own-tab--controls"
@@ -16,11 +13,7 @@
         title-link-class="own-tab--control--link"
       >
         <template v-if="isTwoDimensional">
-          <Comparison
-            :comparison-data="item.timeEntries"
-            video
-            is-second-dimension
-          />
+          <Comparison :comparison-data="item.timeEntries" video is-second-dimension />
         </template>
         <template v-else>
           <div class="row align-items-strech">
@@ -34,8 +27,8 @@
                   <img
                     :src="`/img/comparison/${imagePath}/${innerItem.image}`"
                     class="img-fluid"
-                    :alt="`Bild von ${innerItem.person} in ${innerItem.place}`"
-                  >
+                    :alt="`Bild von ${innerItem.person}}`"
+                  />
                 </figure>
               </template>
               <template v-else>
@@ -47,9 +40,16 @@
                   />
                 </div>
               </template>
+              <template v-if="innerItem.colors">
+                <section class="colorsWrapper">
+                  <div class="colors" v-for="(color, index) in innerItem.colors" :key="index">
+                    <span :style="{ backgroundColor: color }" />
+                  </div>
+                </section>
+              </template>
               <section class="description">
-                <h5>{{ innerItem.place }}</h5>
-                <p>{{ innerItem.person }}</p>
+                <h5>{{ innerItem.rule ? innerItem.person : innerItem.place }}</h5>
+                <p>{{ innerItem.rule ? innerItem.rule : innerItem.person }}</p>
               </section>
             </div>
           </div>
@@ -60,139 +60,154 @@
 </template>
 
 <script>
-import { BTabs, BTab } from 'bootstrap-vue';
+import { BTabs, BTab } from "bootstrap-vue";
 
 export default {
-  name: 'Comparison',
+  name: "Comparison",
   components: {
     BTabs,
-    BTab,
+    BTab
   },
   props: {
     comparisonData: {
       type: Array,
-      required: true,
+      required: true
     },
     imagePath: {
       type: String,
       required: false,
-      default: '',
+      default: ""
     },
     video: {
       type: Boolean,
       required: false,
-      default: false,
+      default: false
     },
     isTwoDimensional: {
       type: Boolean,
       required: false,
-      default: false,
+      default: false
     },
     isSecondDimension: {
       type: Boolean,
       required: false,
-      default: false,
-    },
+      default: false
+    }
   },
   data() {
     return {};
-  },
+  }
 };
 </script>
 
 <style lang="scss" scoped>
-.comparison{
-  margin-top:35px;
+.comparison {
+  margin-top: 35px;
 
-  &.second-dimension{
+  &.second-dimension {
     margin-top: 10px;
   }
 
-  figure{
-    img{
-      display:block;
-      width:100%;
+  figure {
+    margin: 0;
+    img {
+      display: block;
+      width: 100%;
     }
   }
 
-  .description{
+  .colorsWrapper {
+    display: flex;
+    width: 100%;
+    .colors {
+      flex: 1 1 auto;
+      span {
+        display: block;
+        width: 100%;
+        padding-top: 100%;
+      }
+    }
+  }
+
+  .description {
     margin-top: 15px;
 
-    h5{
-      margin:0;
-      font-size:1.1rem;
-      font-weight:600;
+    h5 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 600;
     }
 
-    p{
+    p {
       color: var(--color-gray);
-      font-size:.95rem;
+      font-size: 0.95rem;
     }
   }
 }
 </style>
 
 <style lang="scss">
-.embed-responsive-9by16{
-  &::before{
+.embed-responsive-9by16 {
+  &::before {
     padding-top: 16/9 * 100%;
   }
 }
 
-.own-tab--controls{
+.own-tab--controls {
   border-bottom: 1px solid var(--color-gray-light);
-  margin-bottom:20px;
+  margin-bottom: 20px;
 
-  .own-tab--small &{
-    font-size: .9rem;
-    border:none;
+  .own-tab--small & {
+    font-size: 0.9rem;
+    border: none;
     margin-top: 0px;
-    margin-bottom:25px;
+    margin-bottom: 25px;
   }
 
-  .own-tab--control{
-    margin-bottom:0;
+  .own-tab--control {
+    margin-bottom: 0;
 
-    &:first-child{
-      .own-tab--control--link{
-        padding-left:0;
+    &:first-child {
+      .own-tab--control--link {
+        padding-left: 0;
       }
     }
 
-    .own-tab--control--link{
-      border:none;
+    .own-tab--control--link {
+      border: none;
       color: var(--color-gray);
       outline: none !important;
       padding: 15px 20px;
-      transition: all ease .5s;
+      transition: all ease 0.5s;
 
-      .own-tab--small &{
+      .own-tab--small & {
         padding: 5px 12px;
-        line-height:1;
+        line-height: 1;
         margin-right: 10px;
-        border-radius:10px;
+        border-radius: 10px;
       }
 
-      &.active{
+      &.active {
         font-weight: 600;
         color: var(--color-text);
 
-        .own-tab--small &{
+        .own-tab--small & {
           background: var(--color-primary);
-          color:white;
+          color: white;
 
-          &:focus{
+          &:focus {
             background: var(--color-primary);
-            color:white;
+            color: white;
           }
         }
       }
 
-      &:hover, &:focus{
+      &:hover,
+      &:focus {
         color: var(--color-text);
 
-        .own-tab--small &{
-          background: var(--color-gray-lighter)
+        .own-tab--small & {
+          background: var(--color-gray-lighter);
         }
       }
     }
