@@ -69,8 +69,8 @@ export default {
               person: 'Fabien',
             },
             {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
-              place: 'Hünibach',
+              image: 'W3-Andre-2-IMG_6035.jpeg',
+              place: 'Quinten',
               person: 'André',
             },
             {

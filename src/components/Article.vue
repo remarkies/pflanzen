@@ -1,5 +1,5 @@
 <template>
-  <div class="article">
+  <div class="article" :id="article.id">
     <h2>
       <slot name="title">
         {{ article.title }}

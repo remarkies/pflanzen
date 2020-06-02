@@ -5,15 +5,17 @@
     </Header>
 
     <div class="container-lg">
-      <Article :article="comparisonSalad">
-        <template v-slot:content>
-          <ComparisonSalad />
-        </template>
-      </Article>
 
       <Article :article="comparisonSound">
         <template v-slot:content>
           <ComparisonSound />
+        </template>
+      </Article>
+
+
+      <Article :article="comparisonSalad">
+        <template v-slot:content>
+          <ComparisonSalad />
         </template>
       </Article>
 
