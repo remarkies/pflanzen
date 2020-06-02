@@ -26,20 +26,20 @@ export default {
     return {
       colorThemes: [
         {
-          src: "/img/comparison/colorTheme/Kartoffel-Luka-1.jpg",
-          colors: ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"],
+          src: "/img/comparison/colorTheme/Farbpalette-Luka.jpg",
+          colors: ["#164E00", "#338200", "#73B600", "#C1629F", "#FFDA00"],
           place: "Schmitten",
           person: "Fabien"
         },
         {
-          src: "/img/comparison/colorTheme/Kartoffel-Luka-1.jpg",
-          colors: ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"],
+          src: "/img/comparison/colorTheme/Farbpalette-Luka.jpg",
+          colors: ["#164E00", "#338200", "#73B600", "#C1629F", "#FFDA00"],
           place: "Hünibach",
           person: "André"
         },
         {
-          src: "/img/comparison/colorTheme/Kartoffel-Luka-1.jpg",
-          colors: ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"],
+          src: "/img/comparison/colorTheme/Farbpalette-Luka.jpg",
+          colors: ["#164E00", "#338200", "#73B600", "#C1629F", "#FFDA00"],
           place: "Adliswil",
           person: "Luka"
         }
