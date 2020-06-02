@@ -28,8 +28,9 @@ const functions = {
     return imageSet;
   },
 
-  createArticle(title, description, imageSets) {
+  createArticle(title, description, imageSets, id = '') {
     const article = {
+      id,
       title,
       description,
       imageSets: [],

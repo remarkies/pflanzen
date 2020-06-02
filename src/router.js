@@ -15,21 +15,33 @@ export default new Router({
       path: '/',
       name: 'comparison',
       component: Comparison,
+      meta: {
+        title: 'IDA Pflanzen - Vergleiche'
+      }
     },
     {
       path: '/andre',
       name: 'andre',
       component: Andre,
+      meta: {
+        title: 'IDA Pflanzen - Projektdokumentation André'
+      }
     },
     {
       path: '/luka',
       name: 'luka',
       component: Luka,
+      meta: {
+        title: 'IDA Pflanzen - Projektdokumentation Luka'
+      }
     },
     {
       path: '/fabien',
       name: 'fabien',
       component: Fabien,
+      meta: {
+        title: 'IDA Pflanzen - Projektdokumentation Fabien'
+      }
     },
     {
       path: '*',

@@ -31,23 +31,6 @@ export default {
     return {
       description: 'Das Ökosystem des eigenen Gartens liegt zwar physisch nahe, und ist mir doch auf eine Art fern. Durch meinen von Technik dominierten Alltag verweile ich meistens nur noch zum Sport oder zur Entspannung in der Natur und nehme mir selten Zeit, Details und die Faszination der gesamten Biodiversität zu entdecken.<br><br>Im IDA-Modul Pflanzen wollte ich mich mit dem Ökosystem meines Gartens in Hünibach und dem Garten des Ferienhauses in Quinten auseinandersetzen und dabei Vergleiche zu meinen Studienkollegen ziehen. Zusätzlich zu diesen Vergleichen habe ich mich mit dem Sähen von Blumen, dem aufziehen von Gemüse und mit Schwalbenschwanz-Schmetterlingen auseinandergesetzt. ',
       articles: [],
-      projects: [
-        {
-          title: 'Blumen sähen',
-          description: 'Um das Aufwachsen von Pflanzen zu erleben, habe ich Holzkisten zu Pflanzentöpfen umgebaut und darin 8 verschiedene Blumensorten angesät, die aus meiner Sicht farblich zueinander passen.',
-        },
-        {
-          title: 'Gartenbeet Bau',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu leo, tristique elementum consectetur faucibus vel, fringilla. Sed amet duis etiam condimentum aliquet at sit. Blandit pellentesque tempor facilisis augue pulvinar convallis odio. Tellus blandit tempus cursus tellus porttitor placerat.',
-        },
-        {
-          title: 'Schwalbenschwanz Schmetterlinge',
-          subtitle: '',
-        },
-        {
-          title: 'diverses',
-        },
-      ],
     };
   },
   mounted() {
@@ -116,6 +99,7 @@ export default {
             ]),
           ], 'Die Phazilien sind im Gegensatz zum Klatsch-Mohn viel schneller gewachsen. Der Klatsch-Mohn (links) besteht zu diesem Zeitpunkt noch immer aus ganz kleinen Sprösslingen. Aus diesem Grund musste ich eine Einrichtung machen, die die Phazilien hoch hält und dem Klatschmohn somit trotzdem Sonne gewährt.'),
         ],
+        'blumen-kisten'
       );
 
       const articleGemueseHuenibach = DataSet.createArticle(
@@ -162,6 +146,7 @@ export default {
             ]),
           ], 'Beim Eisbergsalat ist nun erstmals zu erkennen, dass er sich in seine bekannte Form "einrollt".'),
         ],
+        'salat-thun'
       );
 
       const articleGemueseQuinten = DataSet.createArticle(
@@ -199,10 +184,58 @@ export default {
               DataSet.createImage('/img/andre/garten-quinten/set-3/IMG_5936.jpeg', 12),
             ]),
           ], 'Ich ergänzte das Garten-Beet zusätzlich mit marrokanischer Minze, Oregano und Basilikum. Zudem musste ich schon das erste Mal jäten.<br><br>Hinten links ist zu erkennen, wie stark der Teefenchel innerhalb dieser 2 Wochen gewachsen ist.'),
+          // 31.05.2020
+          DataSet.createImageSet('Die Salate haben sich dank schönem Wetter gut entwickelt. Im Vergleich zu Hünibach sind sie jedoch um einiges kleiner - ich gehe davon aus, dass dies zum einen wegen dem Boden ist, zum anderen weil es wahrscheinlich gar etwas zu warm war. Diese Hitze sieht man dem <b>grünen Kopfsalat</b> am besten an, da einige Blätter gelb wurden.<br>Der <b>rote Kopfsalat</b> konnte sich etwas von den Schnecken erholen, jedoch bezweifle ich, dass dieser noch zu einem schönen, grossen Salat heranwächst. Beim <b>Eisbergsalat</b> kann man nun auch hier die Verwandlung zur Kugel ein wenig erkennen.<br><br>Allgemein ist zu sehen, dass die Schneckenkörner offensichtlich ihre Arbeit gut machen.', false, [
+            DataSet.createRow([
+              DataSet.createImage('/img/andre/garten-quinten/set-4/part-1/IMG_6006.jpeg', 8),
+              DataSet.createImage('/img/andre/garten-quinten/set-4/part-1/IMG_5990.jpeg', 4),
+              DataSet.createImage('/img/andre/garten-quinten/set-4/part-1/IMG_5989.jpeg', 4),
+              DataSet.createImage('/img/andre/garten-quinten/set-4/part-1/IMG_6003.jpeg', 8),
+            ]),
+          ]),
+          DataSet.createImageSet('Die angesetzten Kräuter haben sich innerhalb dieser Woche nur wenig verändert. Für den <b>Basilikum</b> war es wohl etwas zu warm, weshalb dieser auch etwas gelb wurde.<br>Auf dem <b>Teefenchel</b> ist bisher leider kein Schmetterlingsei und auch keine Raupe zu finden.', false, [
+            DataSet.createRow([
+              DataSet.createImage('/img/andre/garten-quinten/set-4/part-2/IMG_6011.jpeg', 3),
+              DataSet.createImage('/img/andre/garten-quinten/set-4/part-2/IMG_5997.jpeg', 3),
+              DataSet.createImage('/img/andre/garten-quinten/set-4/part-2/IMG_5999.jpeg', 3),
+              DataSet.createImage('/img/andre/garten-quinten/set-4/part-2/IMG_6002.jpeg', 3),
+            ]),
+          ]),
+          DataSet.createImageSet('Es war nun auch an der Zeit die <b>Kartoffeln</b> für unseren Kartoffel-Vergleich auszugraben. Innerhalb der dieser Woche haben die Kartoffeln erste Blätter gebildet, die es bis über die Oberfläche schafften.', false, [
+            DataSet.createRow([
+              DataSet.createImage('/img/andre/garten-quinten/set-4/part-3/IMG_6022.jpeg', 4),
+              DataSet.createImage('/img/andre/garten-quinten/set-4/part-3/IMG_6030.jpeg', 4),
+              DataSet.createImage('/img/andre/garten-quinten/set-4/part-3/IMG_6035.jpeg', 4),
+            ]),
+          ]),
+          DataSet.createImageSet('Dies ist somit der letzte Zwischenstand meines Gemüsegartens in Quinten für dieses Projekt. Ich wede die Bewirtschaftung jedoch weiter verfolgen, fleissig giessen und jäten, und freue mich schon darauf, die selbst angesetzten Kräuter und die Salate in meine Gerichte einzubauen. Auch künftig will ich hier selbst Gemüse anziehen, um mehr Lebensmittel direkt aus dem Garten konsumieren zu können.', false, [
+            DataSet.createRow([
+              DataSet.createImage('/img/andre/garten-quinten/set-4/part-2/IMG_8212.jpeg', 12),
+            ]),
+          ]),
         ],
+        'garten-quinten'
       );
 
-      this.articles.push(articleBlumen, articleGemueseHuenibach, articleGemueseQuinten);
+      const articleSchnmetterlinge = DataSet.createArticle(
+        'Von der Raupe zum Schmetterling 🐛',
+        'Als ich zu Beginn des Moduls damit begann, mich mit dem Ökosystem meines Gartens auseinanderzusetzen, stiess ich schnell auf die Schwalbenschwanz-Schmetterlinge, die meine Mutter seit dem letzten Jahr aufzieht. Ich bin selbst fasziniert von der Verwandlung eines winzigen Eis in eine Raupe und schlussendlich in einen Schmetterling. Diesen Weg versuchte ich fotografisch festzuhalten.',
+        [
+          DataSet.createImageSet('Alles beginnt mit winzigen Eiern, die von Schwalbenschwanz-Schmetterlingen gelegt werden. Diese findet man vor allem auf Teefenchel-, Fenchel-, Karotten-, oder Dill-Kraut. In unserem Garten haben wir hierzu mehrere Teefenchel, Fenchel und Dill gepflanzt. Die Eier habenn etwa eine Grösse von 1&nbsp;mm<sup>3</sup>.', false, [
+            DataSet.createRow([
+              DataSet.createImage('/img/andre/garten-quinten/set-1/IMG_5837.jpeg', 4),
+            ]),
+          ], 'Nach etwa 2 Tagen schlüpft aus eiem Ei eine winzige Raupe.'),
+          DataSet.createImageSet('Alles beginnt mit winzigen Eiern, die von Schwalbenschwanz-Schmetterlingen gelegt werden. Diese findet man vor allem auf Teefenchel-, Fenchel-, Karotten-, oder Dill-Kraut. In unserem Garten haben wir hierzu mehrere Teefenchel, Fenchel und Dill gepflanzt. Die Eier habenn etwa eine Grösse von 1&nbsp;mm<sup>3</sup>.', false, [
+            DataSet.createRow([
+              DataSet.createImage('/img/andre/garten-quinten/set-1/IMG_5837.jpeg', 4),
+            ]),
+          ], 'Auf der linke seite ist das Ei noch sehr gelb. Bevor die Raupen schlüpfen, verfärben sich sich dunkel.'),
+        ],
+        'schmetterlinge'
+      );
+
+      this.articles.push(articleBlumen, articleGemueseHuenibach, articleGemueseQuinten, articleSchnmetterlinge);
     },
   },
 };
