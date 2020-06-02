@@ -2,7 +2,7 @@
     <div>
         <Header name="Luka" :description="description" />
         <div class="container-lg">
-            <Article :key="article.title" :article="article" v-for="article in articles"/>
+            <Article collapsible :key="article.title" :article="article" v-for="article in articles"/>
         </div>
     </div>
 </template>
