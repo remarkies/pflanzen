@@ -221,16 +221,40 @@ export default {
         'Von der Raupe zum Schmetterling 🐛',
         'Als ich zu Beginn des Moduls damit begann, mich mit dem Ökosystem meines Gartens auseinanderzusetzen, stiess ich schnell auf die Schwalbenschwanz-Schmetterlinge, die meine Mutter seit dem letzten Jahr aufzieht. Ich bin selbst fasziniert von der Verwandlung eines winzigen Eis in eine Raupe und schlussendlich in einen Schmetterling. Diesen Weg versuchte ich fotografisch festzuhalten.',
         [
-          DataSet.createImageSet('Alles beginnt mit winzigen Eiern, die von Schwalbenschwanz-Schmetterlingen gelegt werden. Diese findet man vor allem auf Teefenchel-, Fenchel-, Karotten-, oder Dill-Kraut. In unserem Garten haben wir hierzu mehrere Teefenchel, Fenchel und Dill gepflanzt. Die Eier habenn etwa eine Grösse von 1&nbsp;mm<sup>3</sup>.', false, [
+          DataSet.createImageSet('Alles beginnt mit winzigen Eiern, die von Schwalbenschwanz-Schmetterlingen gelegt werden. Diese findet man vor allem auf Teefenchel-, Fenchel-, Karotten-, oder Dill-Kraut. In unserem Garten haben wir hierzu mehrere Teefenchel, Fenchel und Dill gepflanzt. Die Eier habenn etwa eine Grösse von 1&nbsp;mm<sup>3</sup>.<br><br>Zuerst sind die Eier weiss/gelb, bis sie sich während etwa 2 Tagen immer dunkler verfärben, bis sie fast durchsichtig sind.', false, [
             DataSet.createRow([
-              DataSet.createImage('/img/andre/garten-quinten/set-1/IMG_5837.jpeg', 4),
+              DataSet.createImage('/img/andre/schmetterlinge/set-1/20200507-DT4A9023-Web.jpg', 6),
+              DataSet.createImage('/img/andre/schmetterlinge/set-1/20200507-DT4A9062-Web.jpg', 6),
             ]),
-          ], 'Nach etwa 2 Tagen schlüpft aus eiem Ei eine winzige Raupe.'),
-          DataSet.createImageSet('Alles beginnt mit winzigen Eiern, die von Schwalbenschwanz-Schmetterlingen gelegt werden. Diese findet man vor allem auf Teefenchel-, Fenchel-, Karotten-, oder Dill-Kraut. In unserem Garten haben wir hierzu mehrere Teefenchel, Fenchel und Dill gepflanzt. Die Eier habenn etwa eine Grösse von 1&nbsp;mm<sup>3</sup>.', false, [
+          ]),
+          DataSet.createImageSet('Sobald eine Raupe schlüpft, isst sie als erstes die Schale des eigenen Eis. Die Raupen sind in diesem Zustand nur etwa 2 Millimeter gross.<br><br>Diese zu fotografieren ist eine ziemliche Herausforderung. Mit meinem <span class="text-monospace">24-70&nbsp;mm, f/2.8</span>-Objektiv habe ich eine Naheinstellgrenze von 0.38&nbsp;m. Habe ich den Zoom auf 70&nbsp;mm und den manuellen Fokus auf 0.38&nbsp;m eingestellt, ist das Räupchen mit meinem Fullframe-Sensor immer noch winzig klein im Bild. Da ich kein Makro-Objektiv besitze, versuchte ich die Bilder der ganz kleinen Tiere mit meiner alten Kamera, die einen APS-C Sensor hat, zu machen. So erreiche ich mit dem selben Objektiv einen Auschnitt, als würde ich ein 112&nbsp;mm-Objektiv (70*1.6) auf meiner Fullframe-Kamera verwenden. Das Bild hat so zwar eine tiefere Auflösung, dennoch sind auf diese Weise mehr Details vorhanden, als beim Beschneiden des Fullframe-Bildes.', false, [
             DataSet.createRow([
-              DataSet.createImage('/img/andre/garten-quinten/set-1/IMG_5837.jpeg', 4),
+              DataSet.createImage('/img/andre/schmetterlinge/set-2/20200519-IMG_9173-Web.jpg', 12),
             ]),
-          ], 'Auf der linke seite ist das Ei noch sehr gelb. Bevor die Raupen schlüpfen, verfärben sich sich dunkel.'),
+          ]),
+          DataSet.createImageSet('Junge Raupen sind fast ganz schwarz, haben orange Hörnchen und besitzen in der Mitte einen hellen Sattel. Dies lässt sie wie einen Vogel-Dreck aussehen, was ihnen dazu verhilft, nicht von Vögel gefressen zu werden.', false, [
+            DataSet.createRow([
+              DataSet.createImage('/img/andre/schmetterlinge/set-3/20200519-DT4A9114-Web.jpg', 12),
+              DataSet.createImage('/img/andre/schmetterlinge/set-3/20200519-DT4A9113-Web.jpg', 6),
+              DataSet.createImage('/img/andre/schmetterlinge/set-3/20200507-DT4A9088-Web.jpg', 6),
+            ]),
+          ]),
+          DataSet.createImageSet('Die Raupen fressen schon mit kleiner Grösse sehr viel. Dies führt dazu, dass sie realtiv schnell wachsen und dabei die Haut zu klein wird. Aus diesem Grund <b>häuten</b> sich die Raupen bis zur Verpuppung ungefähr 4 Mal.<br>In ihrer dritten Phase verlieren sie nach meiner Beobachtung die Hauptfarbe Schwarz und erhalten Weiss als Grundfarbe.<br><br>Um die Tiere vor den Vögeln zu retten nehmen wir sie jeweils spätestens in diesem Stadium in den Netz-Käfig.', false, [
+            DataSet.createRow([
+              DataSet.createImage('/img/andre/schmetterlinge/set-4/20200507-DT4A9079-Web.jpg', 4),
+              DataSet.createImage('/img/andre/schmetterlinge/set-4/20200519-DT4A9119-Web.jpg', 4),
+              DataSet.createImage('/img/andre/schmetterlinge/set-4/20200519-DT4A9116-Web.jpg', 4),
+              DataSet.createImage('/img/andre/schmetterlinge/set-4/20200519-DT4A9117-Web.jpg', 12),
+            ]),
+          ]),
+          DataSet.createImageSet('Bald erhalten die Raupen ihre bekannte hellgrün-schwarze Haut.<br>Je grösser die Raupen sind, desto mehr fressen sie. Dies merkt man vor allem, wenn man die Raupen auf mehreren Zweigen in einem Netz-Käfig hat - der Strauch schrumpft sichtlich und der Kot am Boden häuft sich schnell an.', false, [
+            DataSet.createRow([
+              DataSet.createImage('/img/andre/schmetterlinge/set-5/20200519-DT4A9115-Web.jpg', 12),
+              DataSet.createImage('/img/andre/schmetterlinge/set-5/20200519-IMG_9170-Web.jpg', 6),
+              DataSet.createImage('/img/andre/schmetterlinge/set-5/20200520-IMG_9181-Web.jpg', 6),
+              DataSet.createImage('/img/andre/schmetterlinge/set-5/20200520-IMG_9177-Web.jpg', 12),
+            ]),
+          ]),
         ],
         'schmetterlinge'
       );
