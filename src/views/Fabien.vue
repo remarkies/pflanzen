@@ -2,7 +2,7 @@
   <div>
     <Header name="Fabien" :description="description" />
     <section class="container-xl">
-      <Article v-for="article in articles" :key="article.title" :article="article" collapsible />
+      <Article v-for="(article, index) in articles" :key="index" :article="article" collapsible />
     </section>
   </div>
 </template>
@@ -29,21 +29,6 @@ export default {
   },
   methods: {
     initArticles() {
-      const colorThemes = DataSet.createArticle(
-        "Farbpaletten",
-        "Hallo",
-        [
-          DataSet.createImageSet("", false, [
-            DataSet.createRow([
-              DataSet.createImage("/img/fabien/insects/P1010296.jpg", 4, ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"]),
-              DataSet.createImage("/img/fabien/insects/P1010296.jpg", 4, ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"]),
-              DataSet.createImage("/img/fabien/insects/P1010296.jpg", 4, ["#FF5733", "#33F0FF", "#7A33FF", "#FFE033"])
-            ])
-          ]),
-        ]
-      );
-      this.articles.push(colorThemes);
-
       const fruits = DataSet.createArticle(
         "Früchte und Beeren",
         "Wir verfügen in unserem über verschiedene Fruchtbäume und Beerensträucher, die uns mit frischen Produkten für Confiture, Desserts, Znüni/Zvieri etc. versorgen.<br><br>Um die Verwandlung von der Blüte zur Frucht festzuhalten, aber auch das Entwicklungsstadium der verschiedenen Pflazen zu vergleichen, habe ich die entsprechenden Pflanzen in den letzten Wochen fotografisch dokumentiert.",

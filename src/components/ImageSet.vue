@@ -1,16 +1,11 @@
 <template>
   <div class="image-set">
     <div v-for="row in imageSet.rows" :key="row.id" class="row">
-      <div v-for="image in row.images" :key="image.path" :class="'col-'+image.width">
+      <div v-for="(image, index) in row.images" :key="index" :class="'col-'+image.width">
         <CustomVideo v-if="image.ratio !== undefined" :video="image" />
         <a v-if="image.ratio === undefined" @click="initPhotoSwipe(image.path)">
           <img ref="photoSwipeImages" class="img" :src="image.path" />
         </a>
-        <div class="colors" v-if="image.colors">
-          <div class="color" v-for="(color, index) in image.colors" :key="index">
-            <span :style="{ backgroundColor: color }" />
-          </div>
-        </div>
       </div>
     </div>
     <p
@@ -128,19 +123,6 @@ img {
   height: 100%;
   display: block;
   object-fit: cover;
-}
-
-.colors {
-  width: 100%;
-  display: flex;
-  .color {
-    flex: 1 1 auto;
-    span {
-      display: block;
-      width: 100%;
-      padding-top: 100%;
-    }
-  }
 }
 
 .space {

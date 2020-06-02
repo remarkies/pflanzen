@@ -1,6 +1,6 @@
 const functions = {
-  createImage(path, width, colors) {
-    return { path, width, colors: colors || null };
+  createImage(path, width) {
+    return { path, width };
   },
 
   createVideo(path, width, ratio) {
