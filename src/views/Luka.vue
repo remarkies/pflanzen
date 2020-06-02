@@ -23,7 +23,7 @@
         },
         methods: {
             initArticles: function() {
-                let wanne = DataSet.createArticle("Gemüsewald 🌳","Neben dem Gemüsetopf entschied ich mich eine von Unkraut zugewachsene Zinkwanne neu zu bepflanzen. Dafür entfernte ich das Unkraut und vermischte die vorhandene Erde mit Freilanderde. Ich recherchierte im Internet, welche Pflanzen nebeneinander gepflanzt werden dürfen und stellte mir eine Liste mit Pflanzen zusammen, die sich äusserlich stark unterscheiden, um ein Interessantes Zusammenleben zu erzeugen. Ich besorgte Mangold, Pfefferminze, Süsskartoffel, Kapuzinerkresse, gemischte Salatsetzlinge und Radieschensamen. Damit einzelne Exemplare nicht untergehen, setzte ich die grösseren Pflanzen weiter hinten und die Kleineren davor. Die Radieschensamen wurden am Rand entlang verteilt und mit Aussaaterde überdeckt.",
+                let wanne = DataSet.createArticle("Gemüsewald 🥦","Neben dem Gemüsetopf entschied ich mich eine von Unkraut zugewachsene Zinkwanne neu zu bepflanzen. Dafür entfernte ich das Unkraut und vermischte die vorhandene Erde mit Freilanderde. Ich recherchierte im Internet, welche Pflanzen nebeneinander gepflanzt werden dürfen und stellte mir eine Liste mit Pflanzen zusammen, die sich äusserlich stark unterscheiden, um ein Interessantes Zusammenleben zu erzeugen. Ich besorgte Mangold, Pfefferminze, Süsskartoffel, Kapuzinerkresse, gemischte Salatsetzlinge und Radieschensamen. Damit einzelne Exemplare nicht untergehen, setzte ich die grösseren Pflanzen weiter hinten und die Kleineren davor. Die Radieschensamen wurden am Rand entlang verteilt und mit Aussaaterde überdeckt.",
                     [
                         DataSet.createImageSet("3 Tage", true, [
                             DataSet.createRow([
@@ -87,7 +87,7 @@
                         ])
                     ]);
 
-                let topf = DataSet.createArticle("Gemüsetopf 🌿","Die Bepflanzung eines Gemüsetopfes war der Versuch eine durchmischte dichte Gemüseeinheit zu erschaffen. Damit der Topf von Beginn an etwas hergibt, entschied ich mich Pflanzen in unterschiedlichen Stadien hochzuziehen. Den Topf befüllte ich mit Freilanderde und einer Schicht Aussaaterde. Danach pflanzte ich Schnitt- und Kopfsalatsetzlinge, setzte vorgekeimte Petersilie und verteilte Radieschensamen.",
+                let topf = DataSet.createArticle("Gemüsetopf 🥗","Die Bepflanzung eines Gemüsetopfes war der Versuch eine durchmischte dichte Gemüseeinheit zu erschaffen. Damit der Topf von Beginn an etwas hergibt, entschied ich mich Pflanzen in unterschiedlichen Stadien hochzuziehen. Den Topf befüllte ich mit Freilanderde und einer Schicht Aussaaterde. Danach pflanzte ich Schnitt- und Kopfsalatsetzlinge, setzte vorgekeimte Petersilie und verteilte Radieschensamen.",
                     [
                         DataSet.createImageSet("4 Tage", true, [
                             DataSet.createRow([
