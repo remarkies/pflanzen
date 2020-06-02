@@ -22,6 +22,12 @@
           <ComparisonPotato />
         </template>
       </Article>
+
+      <Article :article="comparisonColorTheme">
+        <template v-slot:content>
+          <ComparisonColorTheme />
+        </template>
+      </Article>
     </div>
   </div>
 </template>
@@ -33,15 +39,17 @@ import Article from '@/components/Article';
 import ComparisonSalad from '@/components/ComparisonSalad';
 import ComparisonSound from '@/components/ComparisonSound';
 import ComparisonPotato from '@/components/ComparisonPotato';
+import ComparisonColorTheme from '@/components/ComparisonColorTheme';
 
 export default {
   name: 'Comparison',
   components: {
+    Header,
     Article,
     ComparisonSalad,
     ComparisonSound,
     ComparisonPotato,
-    Header,
+    ComparisonColorTheme
   },
   data() {
     return {
@@ -58,6 +66,10 @@ export default {
         title: 'Klänge der Natur',
         description: 'Beschreibung Klänge',
       },
+      comparisonColorTheme: {
+        title: 'Farbpaletten',
+        description: 'Hallo'
+      }
     };
   },
 };
