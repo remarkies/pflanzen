@@ -66,7 +66,7 @@ export default {
       },
       comparisonSound: {
         title: 'Klänge der Natur 📻',
-        description: 'Beschreibung Klänge',
+        description: 'Damit die Aufnahmen analysiert werden konnten, wurde bei jeder Aufzeichnung eine Notiz gemacht, was für Geräusche zu hören sind und zusätzlich in welcher Lautstärke. Danach wurde innerhalb eines Ökosystems nach Regelmässigkeiten gesucht, damit später Standorte miteiander verglichen werden können und zusätzlich unregelmässige Geräusche weniger Wert geben zu können. In der nachfolgenden Analyse ist beim Nennen eines Standortes das Ökosystem des jeweiligen Ortes gemeint. <br/><br/>Generell lässt sich sagen, dass an allen Standorten das Gezwitscher der Vögel um 09:00 Uhr, sowie um 16:00 Uhr zu hören ist. Der Verkehr ist am lautesten um 16:00 Uhr. Um 23:00 Uhr sind an allen Standorten Grillen zu hören, am lautesten in Hünibach. Hünibach weist als einzige Lage die Besonderheit auf, dass um 23:00 Uhr kein Verkehr zu hören ist, dafür kräht Morgens um 09:00 Uhr der Hahn. In Schmitten und Adliswil ist es um 16:00 Uhr üblich Stimmen zu hören, dazu um 23:00 Uhr leise Verkehrsgeräusche aus der Ferne, sowie von Zeit zu Zeit ein penetrantes Motorrad. In Adliswil fährt der Bus bis spät in die Nacht.',
       },
       comparisonColorTheme: {
         title: 'Farbpaletten 🌈',
