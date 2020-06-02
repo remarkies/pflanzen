@@ -22,7 +22,7 @@ export default {
           week: 19,
           items: [
             {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
+              image: 'Salat-Fabien-1.jpg',
               place: 'Schmitten',
               person: 'Fabien',
             },
@@ -43,7 +43,7 @@ export default {
           week: 20,
           items: [
             {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
+              image: 'Salat-Fabien-2.jpg',
               place: 'Schmitten',
               person: 'Fabien',
             },
@@ -64,7 +64,7 @@ export default {
           week: 21,
           items: [
             {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
+              image: 'Salat-Fabien-3.jpg',
               place: 'Schmitten',
               person: 'Fabien',
             },
@@ -85,7 +85,7 @@ export default {
           week: 22,
           items: [
             {
-              image: 'W1-Andre-20200507-DT4A9091-Web-2.jpg',
+              image: 'Salat-Fabien-4.jpg',
               place: 'Schmitten',
               person: 'Fabien',
             },

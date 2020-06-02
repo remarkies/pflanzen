@@ -25,7 +25,7 @@ export default {
               title: '9:00',
               items: [
                 {
-                  videoReference: 'Ks80rsSehpU',
+                  videoReference: 'Ac9Yv7iuV0s',
                   place: 'Schmitten',
                   person: 'Fabien',
                 },
@@ -45,7 +45,7 @@ export default {
               title: '16:00',
               items: [
                 {
-                  videoReference: 'Ks80rsSehpU',
+                  videoReference: 'dZfKoAZkWck',
                   place: 'Schmitten',
                   person: 'Fabien',
                 },
@@ -65,7 +65,7 @@ export default {
               title: '23:00',
               items: [
                 {
-                  videoReference: 'Ks80rsSehpU',
+                  videoReference: 'LydsIPx2re0',
                   place: 'Schmitten',
                   person: 'Fabien',
                 },
@@ -91,7 +91,7 @@ export default {
               title: '9:00',
               items: [
                 {
-                  videoReference: 'Ks80rsSehpU',
+                  videoReference: 'HUvZx0C2NZw',
                   place: 'Schmitten',
                   person: 'Fabien',
                 },
@@ -111,7 +111,7 @@ export default {
               title: '16:00',
               items: [
                 {
-                  videoReference: 'Ks80rsSehpU',
+                  videoReference: 'SXT9JB_XBZM',
                   place: 'Schmitten',
                   person: 'Fabien',
                 },
@@ -131,7 +131,7 @@ export default {
               title: '23:00',
               items: [
                 {
-                  videoReference: 'Ks80rsSehpU',
+                  videoReference: 'M-SiS4m9V3M',
                   place: 'Schmitten',
                   person: 'Fabien',
                 },
@@ -157,7 +157,7 @@ export default {
               title: '9:00',
               items: [
                 {
-                  videoReference: 'Ks80rsSehpU',
+                  videoReference: 'jIjJihEIsSM',
                   place: 'Schmitten',
                   person: 'Fabien',
                 },
@@ -177,7 +177,7 @@ export default {
               title: '16:00',
               items: [
                 {
-                  videoReference: 'Ks80rsSehpU',
+                  videoReference: 'ztaIRZK-eeM',
                   place: 'Schmitten',
                   person: 'Fabien',
                 },
@@ -223,7 +223,7 @@ export default {
               title: '9:00',
               items: [
                 {
-                  videoReference: 'Ks80rsSehpU',
+                  videoReference: 'avgAtJbC51U',
                   place: 'Schmitten',
                   person: 'Fabien',
                 },

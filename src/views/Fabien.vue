@@ -30,7 +30,7 @@ export default {
   methods: {
     initArticles() {
       const fruits = DataSet.createArticle(
-        "Früchte und Beeren",
+        "Früchte und Beeren 🌳🍓",
         "Wir verfügen in unserem Garten über verschiedene Fruchtbäume und Beerensträucher, die uns mit frischen Produkten versorgen, welche als Znüni/Zvieri, Konfitüre, oder Desserts Verwendung finden.<br><br>Um die Verwandlung von der Blüte zur Frucht festzuhalten, aber auch das Entwicklungsstadium der verschiedenen Pflanzen zu vergleichen, habe ich die entsprechenden Früchte über die letzten Wochen fotografisch doumentiert.",
         [
           DataSet.createImageSet("Unser <strong>Aprikosenbaum</strong> hat aufgrund des sehr frühen Frühlingeinbruchs bereits Ende März/Anfangs April geblüht. Ein späterer Kälteeinbruch hat ihm arg zugesetzt, aus welchem Grund dieses Jahr keine einzige Aprikose heranwächst.", false, [
@@ -72,7 +72,7 @@ export default {
       this.articles.push(fruits);
 
       const insects = DataSet.createArticle(
-        "Makrofotografie",
+        "Makrofotografie 📷🐝",
         "Fotografie stellt in meinem Leben ein stiefmütterlich behandeltes Hobby dar. Ich finde verschiedenste Aspekte dieser Tätigkeit, von der Funktionsweise einer Kamera, über Bildkomposition bis hin zur Bildbearbeitung, sehr spannend und verbringe nichtdestotrotz nur sehr selten Zeit mit einer Fotokamera in den Händen.<br><br>Ein Bereich der Fotografie den ich bis anhin noch gar nie unter die Lupe genommen habe ist die Makrofotografie. Wie auch ohne Makroobjektiv oder externen Blitz! Genau dies habe ich mir zur Challenge gemacht: Was ist in diesem sehr spezifischen Bereich der Fotografie ohne spezifisches Equipment möglich?<br><br> <strong>Folgende Learnings habe ich bei meiner Arbeit gemacht:</strong> <ul><li>Vergrösserungsfaktor des Objektivs von 1:2 verunmöglicht das Fotografieren von sehr kleinen Insekten und Spinnen (< 1cm) im Gras</li><li>Kurzdistanziger Blitz würde dank kürzerer Belichtungszeit helfen, das Subjekt vom Hintergrund abzuheben (dünklerer Hintergrund)</li><li>Blitz verunmöglicht aufgrund der kurzen Belichtungszeit das scharfe Abbilden von fliegenden Insekten</li><li>Mindestfokusdistanz von 0.3m und Vergrösserungsfaktor von 1:2 reichen nicht, um fürs blosse Auge nicht sichtbare Details zu enthüllen. Einzig das Verwenden von sehr schnellen Verschlusszeiten, respektive das resultierende Einfrieren von Bewegung, verhalf fürs menschliche Auge Verborgenes festzuhalten.</li><li>Um genügend Tiefenschärfe zu garantieren sind Blende f5.8 oder mehr ein Muss. Dadurch muss allerdings leider die ISO-Sensibilität erhöht werden, um genügend kurze Verschlusszeiten zu erreichen</li></ul><br>Als <strong>effektivstes Setup</strong> identifiziert habe ich: Maximaler Zoom, manueller Fokus auf die kleinste Fokusdistanz eingestellt, Blendenvorwahl, um Tiefenschärfe zu kontrollieren, ISO-Wert abhängig der resultierenden Belichtungszeit anpassen, Fokussieren durch Bewegen der ganzen Kamera.",
         [
           DataSet.createImageSet("", false, [
