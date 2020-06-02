@@ -79,7 +79,7 @@ export default {
             DataSet.createRow([
               DataSet.createImage("/img/fabien/insects/P1010296.jpg", 4),
               DataSet.createImage("/img/fabien/insects/P1010809.jpg", 8),
-              DataSet.createImage("/img/fabien/insects/P1020100.jpg", 3),
+              DataSet.createImage("/img/fabien/insects/P1010474.jpg", 3),
               DataSet.createImage("/img/fabien/insects/P1020189.jpg", 3),
               DataSet.createImage("/img/fabien/insects/P1010921.jpg", 6),
               DataSet.createImage("/img/fabien/insects/P1020045.jpg", 5),
