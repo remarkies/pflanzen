@@ -26,8 +26,8 @@ export default {
     return {
       colorThemes: [
         {
-          src: "/img/comparison/colorTheme/Farbpalette-Luka.jpg",
-          colors: ["#164E00", "#338200", "#73B600", "#C1629F", "#FFDA00"],
+          src: "/img/comparison/colorTheme/Farbpalette-Fabien.jpg",
+          colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"],
           place: "Schmitten",
           person: "Fabien"
         },
