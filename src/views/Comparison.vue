@@ -62,7 +62,7 @@ export default {
       },
       comparisonPotato: {
         title: 'Veränderung von Kartoffeln 🥔',
-        description: 'Beschreibung Kartoffeln',
+        description: 'Ein weiterer Vergleich bestand darin, Kartoffeln zu vergraben und nach einigen Wochen beim Herausnehmen ihre Entwicklung festzuhalten.<br><br>Vor dem Verbudeln sahen alle Knollen noch sehr ähnlich aus, wobei zu erwähnen ist, dass die Kartoffel von Luka bereits über kleinere Auswüchse verfügte. Zwei Wochen später führt die Kartoffel von Fabien das Rennen an, hat es doch bereits relativ lange Keime produziert. Am Ende der für den Vergleich geplanten fünf Wochen zeigt sich das Bild allerdings ganz anders. Die Kartoffeln von André und Luka haben sich prächtig entwickelt und an der Erdoberfläche blättrige Stiele hervorgebracht. Währenddessen hat die Knolle von Fabien seit der Woche 3 nur noch kleinere Veränderungen durchlebt und auf einer zweiten Seite Keime produziert. Wurde sie möglicherweise nach dem zwischenzeitigen Ausgraben mit der falschen Seite nach oben zurückgelegt?',
       },
       comparisonSound: {
         title: 'Klänge der Natur 📻',
