@@ -27,57 +27,57 @@
                     [
                         DataSet.createImageSet("3 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/wanne/Session1/Wanne-3.jpg", 12),
-                                DataSet.createImage("/img/luka/wanne/Session1/Wanne-2.jpg", 3),
-                                DataSet.createImage("/img/luka/wanne/Session1/Wanne_Session_1-3.jpg", 9),
-                                DataSet.createImage("/img/luka/wanne/Session1/Wanne_Session_1-1.jpg", 5),
-                                DataSet.createImage("/img/luka/wanne/Session1/Wanne_Session_1-2.jpg", 7),
+                                DataSet.createImage("/img/luka/wanne/session1/Wanne-3.jpg", 12),
+                                DataSet.createImage("/img/luka/wanne/session1/Wanne-2.jpg", 3),
+                                DataSet.createImage("/img/luka/wanne/session1/Wanne_Session_1-3.jpg", 9),
+                                DataSet.createImage("/img/luka/wanne/session1/Wanne_Session_1-1.jpg", 5),
+                                DataSet.createImage("/img/luka/wanne/session1/Wanne_Session_1-2.jpg", 7),
                             ])
                         ]),
                         DataSet.createImageSet("3 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/wanne/Session2/Wanne_Session_2-1.jpg", 12),
-                                DataSet.createImage("/img/luka/wanne/Session2/Wanne-1.jpg", 6),
-                                DataSet.createImage("/img/luka/wanne/Session2/Wanne-3.jpg", 6)
+                                DataSet.createImage("/img/luka/wanne/session2/Wanne_Session_2-1.jpg", 12),
+                                DataSet.createImage("/img/luka/wanne/session2/Wanne-1.jpg", 6),
+                                DataSet.createImage("/img/luka/wanne/session2/Wanne-3.jpg", 6)
                             ])
                         ]),
                         DataSet.createImageSet("5 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/wanne/Session3/Wanne-5.jpg", 12),
+                                DataSet.createImage("/img/luka/wanne/session3/Wanne-5.jpg", 12),
 
-                                DataSet.createImage("/img/luka/wanne/Session3/Wanne_Session_3-3.jpg", 6),
-                                DataSet.createImage("/img/luka/wanne/Session3/Wanne-3.jpg", 6),
+                                DataSet.createImage("/img/luka/wanne/session3/Wanne_Session_3-3.jpg", 6),
+                                DataSet.createImage("/img/luka/wanne/session3/Wanne-3.jpg", 6),
                             ])
                         ]),
                         DataSet.createImageSet("4 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/wanne/Session4/Wanne_Session_4-2.jpg", 4),
-                                DataSet.createImage("/img/luka/wanne/Session4/Wanne_Session_4-1.jpg", 8),
+                                DataSet.createImage("/img/luka/wanne/session4/Wanne_Session_4-2.jpg", 4),
+                                DataSet.createImage("/img/luka/wanne/session4/Wanne_Session_4-1.jpg", 8),
 
-                                DataSet.createImage("/img/luka/wanne/Session4/Wanne-5.jpg", 6),
-                                DataSet.createImage("/img/luka/wanne/Session4/Wanne_Session_4-3.jpg", 6),
+                                DataSet.createImage("/img/luka/wanne/session4/Wanne-5.jpg", 6),
+                                DataSet.createImage("/img/luka/wanne/session4/Wanne_Session_4-3.jpg", 6),
                             ])
                         ]),
                         DataSet.createImageSet("5 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/wanne/Session5/Wanne-6.jpg", 6),
-                                DataSet.createImage("/img/luka/wanne/Session5/Wanne-4.jpg", 6),
-                                DataSet.createImage("/img/luka/wanne/Session5/Wanne-7.jpg", 8),
-                                DataSet.createImage("/img/luka/wanne/Session5/Wanne-3.jpg", 4),
+                                DataSet.createImage("/img/luka/wanne/session5/Wanne-6.jpg", 6),
+                                DataSet.createImage("/img/luka/wanne/session5/Wanne-4.jpg", 6),
+                                DataSet.createImage("/img/luka/wanne/session5/Wanne-7.jpg", 8),
+                                DataSet.createImage("/img/luka/wanne/session5/Wanne-3.jpg", 4),
                             ])
                         ]),
                         DataSet.createImageSet("Im Laufe von circa 4 Wochen hat sich die Zinkwanne sehr schön entwickelt. Alles Gesetzte ist stark gewachsen und der Schnittsalat wäre bereit zur Ernte. Zwischenzeitlich mussten Razzien durchgeführt werden, um Schnecken das Weite zu zeigen. Gegossen wurde nur in den ersten paar Tagen, danach regnete es von alleine. Die Kapuzinerkresse hat mich am meisten überrascht. Sie entwickelte schnell neue Triebe und schoss empor.", false, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/wanne/Session6/Wanne-6.jpg", 4),
-                                DataSet.createImage("/img/luka/wanne/Session6/Wanne-4.jpg", 4),
-                                DataSet.createImage("/img/luka/wanne/Session6/Wanne-8.jpg", 4),
-                                DataSet.createImage("/img/luka/wanne/Session6/Wanne-9.jpg", 12)
+                                DataSet.createImage("/img/luka/wanne/session6/Wanne-6.jpg", 4),
+                                DataSet.createImage("/img/luka/wanne/session6/Wanne-4.jpg", 4),
+                                DataSet.createImage("/img/luka/wanne/session6/Wanne-8.jpg", 4),
+                                DataSet.createImage("/img/luka/wanne/session6/Wanne-9.jpg", 12)
                             ])
                         ]),
                         DataSet.createImageSet("Geplant war erneut eine Intervallaufnahme für die Zinkwanne. Bei Betrachtung des Ergebnisses war die Feststellung, dass die Pflanzen zu stark vom Winde bewegt werden und entschied mich daher das Endresultat der Zinkwanne mit dem \"Macro Probe\"-Objektiv festzuhalten.<br/>" +
                             "Hier verwendete ich den Ansatz so wenig Pflanzen, wie möglich zu berühren, damit die Zwischenräume deutlich grösser Wirken und ein sogenannter Gemüsewald entsteht. Durch die neue Herangehensweise stieg auch die Herausforderung an die ruhige Hand, denn ungleichmässige Bewegungen werden viel schneller ersichtlich.", false, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/wanne/Session6/Wanne-1.jpg", 12),
+                                DataSet.createImage("/img/luka/wanne/session6/Wanne-1.jpg", 12),
                             ])
                         ]),
                         DataSet.createImageSet("", false, [
@@ -91,33 +91,33 @@
                     [
                         DataSet.createImageSet("4 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/topf/Session01/Topf-Session1-2.jpg", 12)
+                                DataSet.createImage("/img/luka/topf/session01/Topf-Session1-2.jpg", 12)
                             ])
                         ]),
                         DataSet.createImageSet("7 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/topf/Session03/Topf-Session3-8.jpg", 8),
-                                DataSet.createImage("/img/luka/topf/Session03/Topf-Session3-2.jpg", 4)
+                                DataSet.createImage("/img/luka/topf/session03/Topf-Session3-8.jpg", 8),
+                                DataSet.createImage("/img/luka/topf/session03/Topf-Session3-2.jpg", 4)
                             ])
                         ]),
                         DataSet.createImageSet("4 Tage", true, [
                             DataSet.createRow([
 
-                                DataSet.createImage("/img/luka/topf/Session05/Topf-Session5-5.jpg", 4),
-                                DataSet.createImage("/img/luka/topf/Session05/Topf-Session5-2.jpg", 8),
+                                DataSet.createImage("/img/luka/topf/session05/Topf-Session5-5.jpg", 4),
+                                DataSet.createImage("/img/luka/topf/session05/Topf-Session5-2.jpg", 8),
                             ])
                         ]),
                         DataSet.createImageSet("8 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/topf/Session06/Topf-Session6-5.jpg", 4),
-                                DataSet.createImage("/img/luka/topf/Session06/Topf-Session6-6.jpg", 8)
+                                DataSet.createImage("/img/luka/topf/session06/Topf-Session6-5.jpg", 4),
+                                DataSet.createImage("/img/luka/topf/session06/Topf-Session6-6.jpg", 8)
                             ])
                         ]),
                         DataSet.createImageSet("Durch die geringe Höhe der Pflanzen im Gemüsetopf werden diese kaum vom Winde beweget, weshalb der Topf beim Betrachten sehr statisch wirkt. \n" +
                             "Die Intervallaufnahme zeigt die laufenden Bewegungen, welche wir im Alltag nicht wahrnehmen.", false, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/topf/Session07/Topf-7.jpg", 8),
-                                DataSet.createImage("/img/luka/topf/Session07/Topf-4.jpg", 4),
+                                DataSet.createImage("/img/luka/topf/session07/Topf-7.jpg", 8),
+                                DataSet.createImage("/img/luka/topf/session07/Topf-4.jpg", 4),
                             ])
                         ]),
                         DataSet.createImageSet("Die Querschnitt-Aufnahme war ein Experiment die Dichte und Diversität des Topfes darzustellen und das Wachstum der vergangenen Wochen zu veranschaulichen. <br/>" +
