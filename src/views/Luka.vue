@@ -91,26 +91,26 @@
                     [
                         DataSet.createImageSet("4 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/topf/session01/Topf-Session1-2.jpg", 12)
+                                DataSet.createImage("/img/luka/topf/session01/Topf-session1-2.jpg", 12)
                             ])
                         ]),
                         DataSet.createImageSet("7 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/topf/session03/Topf-Session3-8.jpg", 8),
-                                DataSet.createImage("/img/luka/topf/session03/Topf-Session3-2.jpg", 4)
+                                DataSet.createImage("/img/luka/topf/session03/Topf-session3-8.jpg", 8),
+                                DataSet.createImage("/img/luka/topf/session03/Topf-session3-2.jpg", 4)
                             ])
                         ]),
                         DataSet.createImageSet("4 Tage", true, [
                             DataSet.createRow([
 
-                                DataSet.createImage("/img/luka/topf/session05/Topf-Session5-5.jpg", 4),
-                                DataSet.createImage("/img/luka/topf/session05/Topf-Session5-2.jpg", 8),
+                                DataSet.createImage("/img/luka/topf/session05/Topf-session5-5.jpg", 4),
+                                DataSet.createImage("/img/luka/topf/session05/Topf-session5-2.jpg", 8),
                             ])
                         ]),
                         DataSet.createImageSet("8 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/topf/session06/Topf-Session6-5.jpg", 4),
-                                DataSet.createImage("/img/luka/topf/session06/Topf-Session6-6.jpg", 8)
+                                DataSet.createImage("/img/luka/topf/session06/Topf-session6-5.jpg", 4),
+                                DataSet.createImage("/img/luka/topf/session06/Topf-session6-6.jpg", 8)
                             ])
                         ]),
                         DataSet.createImageSet("Durch die geringe Höhe der Pflanzen im Gemüsetopf werden diese kaum vom Winde beweget, weshalb der Topf beim Betrachten sehr statisch wirkt. \n" +
