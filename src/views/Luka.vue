@@ -102,21 +102,21 @@
                         ]),
                         DataSet.createImageSet("4 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/topf/session05/Topf-session5-5.jpg", 4),
-                                DataSet.createImage("/img/luka/topf/session05/Topf-session5-2.jpg", 8)
-                        ]),
+                                DataSet.createImage("/img/luka/topf/session05/Topf-Session5-5.jpg", 4),
+                                DataSet.createImage("/img/luka/topf/session05/Topf-Session5-2.jpg", 8),
+                            ])
                         ]),
                         DataSet.createImageSet("8 Tage", true, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/topf/session06/Topf-session6-5.jpg", 4),
-                                DataSet.createImage("/img/luka/topf/session06/Topf-session6-6.jpg", 8)
+                                DataSet.createImage("/img/luka/topf/session06/Topf-Session6-5.jpg", 4),
+                                DataSet.createImage("/img/luka/topf/session06/Topf-Session6-6.jpg", 8)
                             ])
                         ]),
                         DataSet.createImageSet("Durch die geringe Höhe der Pflanzen im Gemüsetopf werden diese kaum vom Winde beweget, weshalb der Topf beim Betrachten sehr statisch wirkt. \n" +
                             "Die Intervallaufnahme zeigt die laufenden Bewegungen, welche wir im Alltag nicht wahrnehmen.", false, [
                             DataSet.createRow([
-                                DataSet.createImage("/img/luka/topf/Session07/Topf-7.jpg", 8),
-                                DataSet.createImage("/img/luka/topf/Session07/Topf-4.jpg", 4),
+                                DataSet.createImage("/img/luka/topf/session07/Topf-7.jpg", 8),
+                                DataSet.createImage("/img/luka/topf/session07/Topf-4.jpg", 4),
                             ])
                         ]),
                         DataSet.createImageSet("Die Querschnitt-Aufnahme war ein Experiment die Dichte und Diversität des Topfes darzustellen und das Wachstum der vergangenen Wochen zu veranschaulichen. <br/>" +
