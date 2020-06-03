@@ -70,7 +70,8 @@ export default {
       },
       comparisonColorTheme: {
         title: 'Farbpaletten 🌈',
-        description: 'Hallo'
+        description: 'Seit Beginn an kam regelmässig das Thema des Erstellens einer Farbpalette auf. Jeder von uns bestimmte zu drei Bildern mit eigenen Kriterien eine Farbpalette. Wir wählten die Motive Close-Up, Aussicht & Wiese.<br/>\n' +
+                'Beim Betrachten der Resultate fiel uns jedoch auf, dass dies sehr subjektiv ist und deshalb schlecht Vergleiche gezogen werden können. Das Interessante ist dagegen, dass beim Thema Aussicht sehr ähnliche Farbpaletten entstanden sind, obwohl die Bilderauswahl, sowie die Auswahl der Kriterien eigenständig geschehen ist.'
       }
     };
   },
