@@ -60,6 +60,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
 .article {
   margin: 80px 0px 40px;
 }
@@ -79,6 +83,10 @@ h2{
   font-size:1.15rem;
   margin-bottom:25px;
   color: var(--color-gray-dark);
+
+  @include media-breakpoint-down(sm){
+    font-size: 1.025rem;
+  }
 }
 
 .collapsed > .when-open,

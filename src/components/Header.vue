@@ -24,10 +24,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
 header{
   padding-top: 160px;
   padding-bottom: 90px;
   background: var(--color-gray-lighter);
+
+  @include media-breakpoint-down(sm){
+    padding-top: 110px;
+    padding-bottom: 50px;
+  }
 }
 
 .description{
