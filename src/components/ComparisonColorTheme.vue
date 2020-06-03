@@ -21,9 +21,9 @@ export default {
           title: 'Close-Up',
           items: [
             {
-              image: 'Farbpalette-Fabien.jpg',
+              image: 'Farbpalette-Fabien-1.jpg',
               person: 'Fabien',
-              rule: 'test',
+              rule: 'Dieses Bild verfügt über verschiedene dominante Farben. Ich habe bei dieser Farbpalette deshalb die fünf Farben ausgewählt, die mir am ehesten ins Auge gestochen sind.',
               colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
             },
             {
@@ -44,10 +44,10 @@ export default {
           title: 'Aussicht',
           items: [
             {
-              image: 'Farbpalette-Fabien.jpg',
+              image: 'Farbpalette-Fabien-2.jpg',
               person: 'Fabien',
-              rule: 'test',
-              colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
+              rule: 'Die Farbwelt des oberen Drittels des Bilds unterscheidet sich markant vom Rest. Also habe ich versucht, die Blautöne des Himmels in Einklang mit den Grüntönen der Pflanzen zu bringen.',
+              colors: ["#5483c7", "#8fc5f3", "#52665b", "#5f802f", "#9dae3c"]
             },
             {
               image: 'Farbpalette-Fabien.jpg',
@@ -67,10 +67,10 @@ export default {
           title: 'Wiese',
           items: [
             {
-              image: 'Farbpalette-Fabien.jpg',
+              image: 'Farbpalette-Fabien-3.jpg',
               person: 'Fabien',
-              rule: 'test',
-              colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
+              rule: 'Bei dieser Palette habe ich versucht, die Wärme, welche das Bild ausstrahlt, mit der Farbwahl auszudrücken.',
+              colors: ["#a0c015", "#edf0ab", "#ffc903", "#e47dc4", "#c7378e"]
             },
             {
               image: 'Farbpalette-Fabien.jpg',
