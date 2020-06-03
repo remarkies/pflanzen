@@ -24,8 +24,15 @@ export default {
 
 <style lang="scss">
 @import 'styles/main.scss';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
 
 body{
   color: var(--color-text);
+
+  @include media-breakpoint-down(sm){
+    font-size: 0.95rem;
+  }
 }
 </style>

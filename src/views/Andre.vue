@@ -29,7 +29,7 @@ export default {
   },
   data() {
     return {
-      description: 'Das Ökosystem des eigenen Gartens liegt zwar physisch nahe, und ist mir doch auf eine Art fern. Durch meinen von Technik dominierten Alltag verweile ich meistens nur noch zum Sport oder zur Entspannung in der Natur und nehme mir selten Zeit, Details und die Faszination der gesamten Biodiversität zu entdecken.<br><br>Im IDA-Modul Pflanzen wollte ich mich mit dem Ökosystem meines Gartens in Hünibach und dem Garten des Ferienhauses in Quinten auseinandersetzen und dabei Vergleiche zu meinen Studienkollegen ziehen. Zusätzlich zu diesen Vergleichen habe ich mich mit dem Sähen von Blumen, dem aufziehen von Gemüse und mit Schwalbenschwanz-Schmetterlingen auseinandergesetzt. ',
+      description: 'Das Ökosystem des eigenen Gartens liegt zwar physisch nahe, und ist mir doch auf eine Art fern. Durch meinen von Technik dominierten Alltag verweile ich meistens nur noch zum Sport oder zur Entspannung in der Natur und nehme mir selten Zeit, Details und die Faszination der gesamten Biodiversität zu entdecken.<br><br>Im IDA-Modul Pflanzen wollte ich mich mit dem Ökosystem meines Gartens in Hünibach und dem Garten des Ferienhauses in Quinten auseinandersetzen und dabei Vergleiche zu meinen Studienkollegen ziehen. Zusätzlich zu diesen Vergleichen habe ich mich mit dem Sähen von Blumen, dem aufziehen von Gemüse und mit Schwalbenschwanz-Schmetterlingen auseinandergesetzt.',
       articles: [],
     };
   },
@@ -273,6 +273,7 @@ export default {
               DataSet.createImage('/img/andre/schmetterlinge/set-4/20200519-DT4A9119-Web.jpg', 4),
               DataSet.createImage('/img/andre/schmetterlinge/set-4/20200519-DT4A9116-Web.jpg', 4),
               DataSet.createImage('/img/andre/schmetterlinge/set-4/20200519-DT4A9117-Web.jpg', 12),
+              DataSet.createImage('/img/andre/schmetterlinge/set-4/20200603-DT4A9386-Web.jpg', 12),
             ]),
           ]),
           DataSet.createImageSet('Bald erhalten die Raupen ihre bekannte hellgrün-schwarze Haut.<br>Je grösser die Raupen sind, desto mehr fressen sie. Dies merkt man vor allem, wenn man die Raupen auf mehreren Zweigen in einem Netz-Käfig hat - der Strauch schrumpft sichtlich und der Kot am Boden häuft sich schnell an.', false, [

@@ -147,6 +147,10 @@ export default {
 </style>
 
 <style lang="scss">
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
 .embed-responsive-9by16 {
   &::before {
     padding-top: 16/9 * 100%;
@@ -179,6 +183,11 @@ export default {
       outline: none !important;
       padding: 15px 20px;
       transition: all ease 0.5s;
+
+      @include media-breakpoint-down(sm){
+        padding: 12px 12px;
+        font-size:.9rem;
+      }
 
       .own-tab--small & {
         padding: 5px 12px;
