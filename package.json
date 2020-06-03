@@ -1,7 +1,7 @@
 {
   "name": "pflanzen",
   "title": "IDA Pflanzen - Dokumentation",
-  "description": "Dokumentation von Luka Kramer, André Lergier und Fabien Jeckelmann über das IDA-Moduls Pflanzen! an der Hochschule Luzern.",
+  "description": "Dokumentation von Luka Kramer, André Lergier und Fabien Jeckelmann über das IDA-Modul Pflanzen! an der Hochschule Luzern.",
   "version": "1.0.0",
   "private": true,
   "scripts": {
