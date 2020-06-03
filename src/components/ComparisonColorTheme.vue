@@ -29,7 +29,7 @@ export default {
             {
               image: 'Andre-Closeup-20200423-DT4A8997-Web.jpg',
               person: 'André',
-              rule: 'test',
+              rule: 'In dieser Farbpalette wollte ich das Zusammenspiel des Schwalbenschwanzes mit dessen Hintergrund ausdrücken. Entsprechend wählte ich drei Farben des Tieres und zwei vom Hintergrund.',
               colors: ["#B3B465", "#848A40", "#FEC44F", "#E9A637", "#903D2D"]
             },
             {
@@ -52,7 +52,7 @@ export default {
             {
               image: 'Andre-Landscape-IMG_0527.jpeg',
               person: 'André',
-              rule: 'test',
+              rule: 'Ich war auf dem See, als mir dieses wunderschöne Zusammenspiel von Farben ins Auge fiel. Ich wollte das Blau des Himmels, als Übergang das Blau-Grün des Sees und schlussendlich den grünen Wald kombinieren. Damit die Farben in einem UI als Akzente verwendet werden können wurden solche mit einer tiefen Leuchtkraft ausgewählt.',
               colors: ["#5B9ED9", "#3385A6", "#014039", "#7A8C37", "#667338"]
             },
             {
@@ -75,7 +75,7 @@ export default {
             {
               image: 'Andre-Wiese-IMG_0449-2.jpeg',
               person: 'André',
-              rule: 'test',
+              rule: 'Ich versuchte die Palette so zu gestalten, wie mir die Wiese in Natura ins Auge stach. Die verschiedenen Grün-Tone im Hintergrund, verschiede Violetts der Blüten und das Gelb der Margriten als Akzent.',
               // colors: ["#B49AD9", "#8677A6", "#71599C", "#D4B781", "#FFE6AA"]
               colors: ["#937EBF", "#BA9DF6", "#7A8C39", "#667336", "#F2AE30"]
             },
