@@ -114,6 +114,7 @@ export default {
           ]),
           DataSet.createImageSet('Leider hat bis zum Ende dieses Experiments nur eine der angesäten Blumen begonnen zu blühen: Der Duftsteinrich hat als einziger eine ganz kleine Blüte gemacht. Trotzdem bin ich sehr zufrieden mit dem Ergebnis! 7 von 8 Sorten in den Kisten sind gesprossen und bis heute in gutem Zustand. Sobald die Blumen noch etwas grösser sind werde ich die Kisten an einen Standort platzieren, bei dem sie gut sichtbar sind und die Kombination der Pflanzen zum Vorschein kommt.<br><br>Die in den Töpfen angesäten Sonnenblumen sind ebenfalls zahlreich gesprossen, weshalb ich diese bald in die freie Erde pflanzen werde. Der Schnittlauch ist das einzige angesäte Kraut, welches sich bis zum Schluss leider nicht zeigte.', false, [
             DataSet.createRow([
+              DataSet.createImage('/img/andre/blumen-kisten/set-8/20200603-DT4A9397-Web.jpg', 12),
               DataSet.createImage('/img/andre/blumen-kisten/set-8/20200603-DT4A9382-Web.jpg', 12),
             ]),
           ]),
