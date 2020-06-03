@@ -1,6 +1,8 @@
 {
   "name": "pflanzen",
-  "version": "0.1.0",
+  "title": "IDA Pflanzen - Dokumentation",
+  "description": "Dokumentation von Luka Kramer, André Lergier und Fabien Jeckelmann über das IDA-Moduls Pflanzen! an der Hochschule Luzern.",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
