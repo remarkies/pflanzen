@@ -27,10 +27,10 @@ export default {
               colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
             },
             {
-              image: 'Farbpalette-Fabien.jpg',
-              person: 'Fabien',
+              image: 'Andre-Closeup-20200423-DT4A8997-Web.jpg',
+              person: 'André',
               rule: 'test',
-              colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
+              colors: ["#B3B465", "#848A40", "#FEC44F", "#E9A637", "#903D2D"]
             },
             {
               image: 'Farbpalette-Luka-2.jpg',
@@ -50,10 +50,10 @@ export default {
               colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
             },
             {
-              image: 'Farbpalette-Fabien.jpg',
-              person: 'Fabien',
+              image: 'Andre-Landscape-IMG_0527.jpeg',
+              person: 'André',
               rule: 'test',
-              colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
+              colors: ["#5B9ED9", "#3385A6", "#014039", "#7A8C37", "#667338"]
             },
             {
               image: 'Farbpalette-Luka-1.jpg',
@@ -73,10 +73,11 @@ export default {
               colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
             },
             {
-              image: 'Farbpalette-Fabien.jpg',
-              person: 'Fabien',
+              image: 'Andre-Wiese-IMG_0449-2.jpeg',
+              person: 'André',
               rule: 'test',
-              colors: ["#e75232", "#fdd42c", "#fafafa", "#6b9412", "#242b3d"]
+              // colors: ["#B49AD9", "#8677A6", "#71599C", "#D4B781", "#FFE6AA"]
+              colors: ["#937EBF", "#BA9DF6", "#7A8C39", "#667336", "#F2AE30"]
             },
             {
               image: 'Farbpalette-Luka-3.jpg',
