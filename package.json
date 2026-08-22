@@ -28,6 +28,18 @@
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
   },
+  "overrides": {
+    "ajv@6.12.2": "6.12.6",
+    "hosted-git-info": "2.8.9",
+    "lodash": "4.17.21",
+    "minimist": ">=1.2.6",
+    "qs@6.5.2": "6.5.3",
+    "shell-quote": ">=1.7.3",
+    "svgo": "2.8.3",
+    "ws@7": "7.5.13",
+    "ws@8": "8.21.3",
+    "y18n@4": "4.0.1"
+  },
   "eslintConfig": {
     "root": true,
     "env": {
